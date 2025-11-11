@@ -5,34 +5,92 @@
 \label{chap:pendahuluan}
 % --- Latar Belakang ---
 \section{Latar Belakang}
-Latar Belakang menjelaskan dasar pemikiran, motivasi, kebutuhan, alasan, atau urgensi pemilihan masalah tugas akhir. Subbab ini berisi penjelasan ringkas tentang kondisi atau situasi yang ada saat ini terkait dengan topik yang dibahas. Tujuan utamanya adalah untuk memberikan informasi secukupnya kepada pembaca agar memahami topik yang akan dibahas. Dalam subbab ini, jelaskan hal-hal berikut ini:
-\begin{enumerate}
-\item	Kondisi atau situasi topik yang dibahas beserta permasalahannya, misalnya tentang pengelolaan informasi di puskesmas daerah pedesaan dan masalah yang dihadapi.
-\item	Berbagai solusi yang telah diterapkan atau solusi yang tersedia dan memungkinkan untuk diterapkan untuk menyelesaikan masalah tersebut.
-\end{enumerate}
+Transformasi digital menjadi salah satu faktor utama yang memengaruhi keberlangsungan dan daya saing organisasi di berbagai sektor industri. Perkembangan Teknologi Informasi (TI) yang cepat memaksa organisasi untuk menyesuaikan diri dengan cara-cara baru dalam mengelola data, layanan, dan proses bisnis. 
+Menurut \textcite{juraida2024enterprise}, penerapan kerangka kerja \textit{Enterprise Architecture} (EA) menjadi elemen strategis yang berperan penting dalam mendukung transformasi digital melalui penyelarasan antara strategi bisnis dan strategi TI organisasi. 
+
+Konsep EA pada awalnya berkembang sebagai pendekatan sistematis untuk merancang arsitektur sistem informasi organisasi. Namun, EA tidak hanya berfokus pada aspek teknologi, tetapi juga mencakup dimensi strategis, bisnis, aplikasi, data, infrastruktur, dan keamanan. Pendekatan ini memungkinkan organisasi untuk mengidentifikasi, merancang, dan mengelola hubungan antara komponen-komponen bisnis dan TI secara terintegrasi. 
+Penelitian oleh \textcite{maita2022perancangan}, menunjukkan bahwa penerapan EA dengan metode TOGAF-ADM pada Usaha Mikro, Kecil, dan Menengah (UMKM) di Indonesia dapat mempercepat integrasi sistem dan meningkatkan efisiensi operasional organisasi. Hal ini menunjukkan bahwa EA dapat diterapkan di berbagai skala organisasi ataupun bisnis selama memiliki tata kelola dan strategi yang jelas.
+
+\textcite{lase2019developing} menjelaskan bahwa penerapan \textit{framework} EA seperti TOGAF atau Zachman tidak berjalan optimal karena tidak sepenuhnya sesuai dengan konteks dan kebutuhan. 
+Faktor yang menyebabkan EA sulit diimplementasikan secara efektif seperti kompleksitas organisasi, keterbatasan sumber daya, dan kurangnya dukungan manajemen. 
+
+Aspek lain yang sering diabaikan dalam penerapan EA adalah \textit{EA governance}. \textcite{virantina2020digital} menegaskan bahwa efektivitas EA sangat bergantung pada kemampuan organisasi dalam mengelola siklus hidup arsitektur, termasuk bagaimana EA digunakan untuk mendukung transformasi digital, 
+manajemen data, dan efisiensi operasional. Penerapan \textit{EA governance} yang baik juga memastikan adanya pembagian peran, tanggung jawab, serta mekanisme evaluasi yang terukur untuk memastikan keberlanjutan EA.
+
+Selain itu, penerapan EA juga membutuhkan dukungan kuat dari manajemen puncak dan budaya organisasi yang mendukung kolaborasi lintas divisi. Menurut \textcite{sasongko2024enterprise}, \textit{Enterprise Architecture Management} (EAM) tidak hanya berfungsi sebagai dokumentasi sistem, tetapi juga sebagai instrumen manajerial yang memfasilitasi komunikasi strategis antara pimpinan, divisi bisnis, dan tim TI. 
+Dengan demikian, EA dapat menjadi alat koordinasi yang menghubungkan visi jangka panjang perusahaan dengan aktivitas operasional sehari-hari.
+
+Pada perusahaan \textit{Beauty} FMCG seperti Paragon Corp, kebutuhan \textit{EA governance} semakin penting karena kompleksitas sistem aplikasi, integrasi lintas tim, dan pengelolaan data produk yang masif. Perusahaan memerlukan model \textit{EA governance} yang mampu mengatur proses pembaruan artefak, standarisasi dokumentasi, serta memastikan bahwa semua inisiatif mendukung arah strategis organisasi. 
+Perusahaan juga mengadopsi \textit{platform} manajemen arsitektur seperti SAP LeanIX untuk mendokumentasikan dan memantau integrasi aplikasi, namun efektivitasnya sangat bergantung pada pola kerja dan mekanisme \textit{governance} yang diterapkan.
+
+Dengan mempertimbangkan berbagai tantangan tersebut, penelitian ini berfokus pada perancangan \textit{EA governance} yang dapat meningkatkan efektivitas peran EA dalam mendukung pengambilan keputusan strategis di perusahaan Paragon Corp. Penelitian ini diharapkan dapat memberikan kontribusi praktis bagi Paragon Corp dalam memperkuat proses transformasi digital, 
+serta memberikan acuan bagi organisasi lain dalam mengembangkan \textit{EA Governance} yang sesuai dengan konteks industri dan budaya kerja di Indonesia.
 
 % --- Rumusan Masalah ---
 \section{Rumusan Masalah}
-Rumusan Masalah berisi masalah utama yang dibahas dalam tugas akhir. Rumusan masalah yang baik memiliki struktur sebagai berikut:
+Berdasarkan latar belakang masalah yang telah diuraikan di atas, maka rumusan masalah yang akan menjadi pokok pembahasan dalam pengerjaan tugas akhir ini adalah sebagai berikut:
 \begin{enumerate}
-\item	Pokok persoalan dari kondisi atau situasi yang ada saat ini. Dengan kata lain, jelaskan kelemahan atau kekurangan dari kondisi, situasi, atau solusi yang dijelaskan pada latar belakang. Ini merupakan pokok rumusan masalah.
-\item	Elaborasi lebih lanjut urgensi penyelesaian masalah tersebut (mengapa penting untuk diselesaikan dan akibat yang dapat terjadi jika tidak diselesaikan).
-\item	Usulan singkat terkait dengan solusi yang ditawarkan untuk menyelesaikan persoalan.
-Penting untuk diperhatikan bahwa persoalan yang dideskripsikan pada subbab ini akan dipertanggungjawabkan di bab Evaluasi (apakah terselesaikan atau tidak).
+\item	Bagaimana efektivitas \textit{EA Governance} saat ini di Paragon Corp?
+\item	Apa saja \textit{gap} yang perlu ditangani untuk mencapai tingkat kematangan \textit{(maturity level)} 3 \textit{EA Governance}?
+\item	Bagaimana rancangan \textit{EA Governance} yang lebih terstruktur dan mampu memberikan dampak terhadap pengambilan keputusan strategis perusahaan?
+\item   Bagaimana cara mengukur peningkatan efektivitas dan dampak penerapan EA setelah dilakukan perbaikan tata kelola?
 \end{enumerate}
 
 % --- Tujuan ---
 \section{Tujuan}
-Tuliskan tujuan utama dan/atau tujuan detail yang akan dicapai dalam pelaksanaan tugas akhir. Fokuskan pada hasil akhir yang ingin diperoleh setelah tugas akhir diselesaikan, terkait dengan penyelesaian persoalan pada rumusan masalah. Penting untuk diperhatikan bahwa tujuan yang dideskripsikan pada subbab ini akan dipertanggungjawabkan di akhir pelaksanaan tugas akhir apakah tercapai atau tidak. Tuliskan kriteria keberhasilan tugas akhir ini.
+Tujuan dari peneliatian ini adalah untuk:
+\begin{enumerate}
+\item	Menganalisis kondisi \textit{EA Governance} yang saat ini diterapkan di Paragon Corp.
+\item	Mengidentifikasi \textit{gap} antara kondisi saat ini dengan praktik terbaik \textit{(best practice)} EA pada \textit{maturity level} 3.
+\item	Merancang model perbaikan \textit{EA Governance} yang efektif dan sesuai dengan konteks organisasi Paragon Corp.
+\item   Mengevaluasi dampak penerapan model perbaikan terhadap efektivitas kinerja EA.
+\end{enumerate}
 
 % --- Batasan Masalah ---
 \section{Batasan Masalah}
-Tuliskan batasan-batasan yang diambil dalam pelaksanaan tugas akhir. Batasan ini dapat dihindari (bersifat opsional, tidak perlu ada) jika topik atau judul tugas akhir dibuat cukup spesifik.
+Agar penelitian ini dapat dilakukan dengan terarah, maka penelitian ini dibatasi pada:
+\begin{enumerate}
+\item	Penelitian difokuskan pada perancangan \textit{(EA governance)} di lingkungan Paragon Corp, khususnya dalam konteks inisiatif digital perusahaan.
+\end{enumerate}
 
 % --- Metodologi Pengerjaan TA ---
 \section{Metodologi}
-Tuliskan semua tahapan yang akan dilalui selama pelaksanaan tugas akhir. Tahapan ini spesifik untuk menyelesaikan persoalan tugas akhir. Khusus untuk penyusunan proposal ini, jelaskan secara detail:
+Metodologi penelitian berikut ini menjelaskan tahapan-tahapan yang dilakukan selama proses penyusunan tugas akhir untuk menjawab rumusan masalah dan mencapai tujuan penelitian.
+Pendekatan yang digunakan bersifat deskriptif kualitatif, dengan fokus pada analisis kondisi saat ini, identifikasi kesenjangan, serta perancangan model \textit{EA Governance} yang sesuai dengan konteks organisasi Paragon Corp.
+
+Secara umum, tahapan metodologi penelitian ini terdiri atas beberapa langkah berikut:
 \begin{enumerate}
-\item	Tahapan investigasi pengumpulan fakta di latar belakang untuk merumuskan masalah.
-\item	Langkah-langkah pencarian, pengelompokan, dan penapisan literatur atau sumber informasi untuk mengumpulkan informasi yang relevan tentang topik yang diangkat, termasuk teori (konsep atau teori apa saja yang perlu dicari), hal-hal yang telah dicapai oleh orang lain (cara mencari dan kata kuncinya), dan berbagai informasi pendukung, untuk mencari solusi terhadap masalah yang dibahas. Gunakan metodologi yang tepat dalam menggali informasi dan dokumentasikan prosesnya (termasuk rekaman wawancara atau survei) di dalam Lampiran, termasuk tautan ke video atau foto. Hasil penggalian informasi ini akan dijelaskan secara sistematis di Bab II Studi Literatur.
+    \item {Tahap investigasi dan pengumpulan fakta} \\
+    Tahap ini bertujuan untuk memahami konteks organisasi dan kondisi penerapan EA di Paragon Corp. Kegiatan yang dilakukan meliputi:
+    \begin{enumerate}[a.]
+        \item Studi dokumen internal terkait artefak EA, alur kerja, dan kebijakan perusahaan.
+        \item Observasi terhadap penggunaan \textit{platform} SAP LeanIX dalam proses manajemen arsitektur.
+        \item Wawancara dengan pihak terkait untuk mengidentifikasi praktik tata kelola dan pola kolaborasi yang berjalan saat ini.
+    \end{enumerate}
+
+    \item {Tahap studi literatur dan analisis teoretis} \\
+    Pada tahap ini dilakukan pengumpulan, pengelompokan, dan penelaahan literatur yang relevan mengenai \textit{Enterprise Architecture}, \textit{EA Governance}, dan \textit{EA Maturity Model}. Literatur yang digunakan mencakup standar internasional seperti TOGAF, artikel ilmiah, serta studi kasus penerapan EA di industri sejenis. 
+    Hasil analisis literatur akan dijelaskan secara sistematis pada Bab II – Studi Literatur sebagai landasan teoretis penelitian.
+
+    \item {Tahap analisis kondisi saat ini dan identifikasi \textit{gap}} \\
+    Berdasarkan hasil investigasi dan teori pendukung, dilakukan analisis terhadap efektivitas \textit{EA Governance} saat ini di Paragon Corp. Tahap ini mencakup:
+    \begin{enumerate}[a.]
+        \item Penilaian tingkat kematangan EA menggunakan kerangka \textit{Enterprise Architecture Maturity Model (EAMM)}.
+        \item Identifikasi kesenjangan (\textit{gap analysis}) antara kondisi saat ini dan praktik terbaik (\textit{best practice}) \textit{EA Governance}.
+    \end{enumerate}
+
+    \item {Tahap perancangan model perbaikan \textit{EA Governance}} \\
+    Pada tahap ini dirancang model perbaikan \textit{EA Governance} yang lebih terstruktur, selaras dengan \textit{maturity level} yang ditargetkan, dan sesuai konteks organisasi. 
+    Model rancangan akan mencakup komponen peran dan tanggung jawab, proses kerja, serta mekanisme evaluasi dan pembaruan artefak EA.
+
+    \item {Tahap evaluasi dan validasi model} \\
+    Model yang dihasilkan kemudian dievaluasi untuk menilai kelayakan dan dampaknya terhadap efektivitas pengelolaan EA. Evaluasi dilakukan melalui:
+    \begin{enumerate}[a.]
+        \item \textit{Expert review} bersama \textit{stakeholder} internal Paragon Corp.
+        \item Analisis perbandingan antara kondisi sebelum dan sesudah penerapan model secara konseptual.
+    \end{enumerate}
+
+    \item {Tahap penyusunan laporan tugas akhir} \\
+    Tahap akhir adalah penyusunan laporan tugas akhir yang memuat seluruh hasil analisis dan rancangan model. Laporan disusun sesuai pedoman akademik yang berlaku di 
+    Program Studi Sistem dan Teknologi Informasi, Institut Teknologi Bandung.
 \end{enumerate}

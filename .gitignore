@@ -1,0 +1,25 @@
+# =====================
+# LATEX BUILD FILES
+# =====================
+
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.log
+*.out
+*.run.xml
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# VS Code temporary
+.vscode/
+*.code-workspace
+
+# Output folders
+out/
+build/
