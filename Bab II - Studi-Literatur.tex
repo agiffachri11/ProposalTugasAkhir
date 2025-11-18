@@ -26,25 +26,7 @@ Tujuan dari EA adalah merancang sebuah \textit{roadmap} yang mencakup aset Tekno
 \textit{Roadmap} ini harus mampu mendukung tercapainya strategi bisnis sekaligus menjelaskan secara rinci bagaimana TI akan digunakan untuk merealisasikan strategi tersebut \autocite{minoli2008enterprise}. 
 Tabel \ref{tbl:tujuanEA} menunjukkan persentase dari tujuan mengapa perusahaan membangun \textit{enterprise architecture}.
 
-\begin{table}[t] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
-  \begin{tabular}{ | p{5cm} | p{2cm} |}
-	\hline
-	Tujuan Spesifik 	& Persentase Perusahaan \\
-	\hline
-	\textit{Business–IT alignment} 	& 20 \\
-	\textit{Business change}	& 15	 \\
-	\textit{Transformation roadmap}	& 15 \\
-  \textit{Infrastructure renewal} 	& 12 \\
-	\textit{Legacy transformation}	& 11	 \\
-	\textit{ERP implementation}	& 11 \\
-  \textit{Application renewal} 	& 10 \\
-	\textit{Mergers/acquisition}	& 4	 \\
-	\textit{Other}	& 2 \\
-	\hline
-	\end{tabular}
-\caption{Tujuan penerapan \textit{Enterprise Architecture} (EA) di perusahaan}
-\label{tbl:tujuanEA}
-\end{table}
+\input{table/tabelTujuanEA.tex}
 
 \subsection{Domain Utama \textit{Enterprise Architecture}}
 Komponen fundamental yang membentuk kerangka kerja EA dikenal sebagai \textit{architecture domains} atau \textit{domain arsitektur}. 
@@ -143,59 +125,12 @@ Tujuan utama dari EAMM adalah untuk menyediakan alat ukur yang sistematis dalam 
 Dengan memahami tingkat kematangan EA, organisasi dapat merencanakan langkah perbaikan yang lebih terarah, memastikan keselarasan antara strategi bisnis dan teknologi informasi, serta meningkatkan nilai tambah EA terhadap pengambilan keputusan manajerial \autocite{jager2023getting}.
 
 \subsection{Tingkatan \textit{Maturity Model}}
-Model kematangan EA umumnya terdiri dari lima tingkat yang menggambarkan perkembangan organisasi dari tahap awal hingga tingkat optimal. Setiap tingkatan menunjukkan sejauh mana proses, kebijakan, dan mekanisme EA telah diintegrasikan dalam kegiatan organisasi \autocite{jager2023getting}.
+Berdasarkan \textit{TOGAF Architecture Maturity Models}, penilaian EAMM dilakukan untuk memahami sejauh mana kapabilitas arsitektur telah diterapkan, dikelola, dan diintegrasikan dalam organisasi.
+Tabel \ref{tbl:EAMM} menunjukkan menyajikan \textit{maturity level} pada masing-masing dimensi sehingga memberikan gambaran komprehensif mengenai posisi kapabilitas arsitektur saat ini serta arah peningkatan yang diperlukan.
 
-\begin{enumerate}
-  \item  Level 1 (\textit{Ad Hoc})\\
-  Pada tahap ini, aktivitas EA belum memiliki struktur atau prosedur formal. Selain itu, implementasi EA masih bersifat individual dan sporadis, tanpa panduan yang baku. Ciri-ciri utama tahapan ini yaitu:
-  \begin{enumerate}[a.]
-    \item Belum ada kerangka kerja arsitektur yang digunakan.
-    \item Dokumentasi arsitektur bersifat tidak teratur dan sulit diakses.
-    \item Kegiatan arsitektur dilakukan berdasarkan kebutuhan jangka pendek.
-    \item Ketergantungan tinggi pada individu tertentu yang memahami sistem.
-    \item Tidak ada koordinasi lintas unit dalam pengelolaan arsitektur.\\
-  \end{enumerate}
-
-  \item  Level 2 (\textit{Repeatable}) \\
-  Pada tahap ini, proses arsitektur mulai dapat diulang dengan pola dan praktik yang relatif serupa di beberapa bagian organisasi, meskipun belum sepenuhnya terstandar. Ciri-ciri utama tahapan ini yaitu:
-  \begin{enumerate}[a.]
-    \item Adanya inisiatif awal untuk menyusun standar dan template dasar.
-    \item Beberapa proyek mulai menerapkan pendekatan EA dengan pola serupa.
-    \item Dokumentasi sudah mulai dilakukan, tetapi belum lengkap atau konsisten.
-    \item Kesadaran terhadap pentingnya EA mulai tumbuh di tingkat manajerial.
-    \item Belum ada mekanisme pengendalian mutu atau evaluasi yang terukur.\\
-  \end{enumerate}
-
-  \item  Level 3 (\textit{Defined}) \\
-  Pada tahap ini, organisasi telah memiliki kerangka kerja dan metodologi EA yang terdokumentasi secara formal serta digunakan secara konsisten di berbagai unit kerja. Ciri-ciri utama tahapan ini yaitu:
-  \begin{enumerate}[a.]
-    \item Kerangka kerja arsitektur (seperti TOGAF atau Zachman) telah diadopsi secara resmi.
-    \item Proses, tanggung jawab, dan peran dalam pelaksanaan EA terdokumentasi dengan baik.
-    \item Standar, kebijakan, dan pedoman EA diterapkan di seluruh organisasi.
-    \item Tersedia \textit{roadmap} jangka menengah dan panjang untuk pengembangan arsitektur.
-    \item Muncul koordinasi antar fungsi bisnis dan TI dalam perencanaan sistem dan layanan.\\
-  \end{enumerate}
-
-  \item  Level 4 (\textit{Managed}) \\
-  Pada tahap ini, organisasi telah memiliki mekanisme pengukuran dan pengendalian terhadap pelaksanaan EA. Hasil evaluasi tersebut digunakan untuk meningkatkan kualitas proses arsitektur. Ciri-ciri utama tahapan ini yaitu:
-  \begin{enumerate}[a.]
-    \item Tersedia metrik kinerja dan indikator evaluasi efektivitas EA.
-    \item Data hasil pengukuran dimanfaatkan untuk melakukan perbaikan berkelanjutan.
-    \item EA mulai terintegrasi dengan proses perencanaan strategis dan manajemen portofolio TI.
-    \item Kepatuhan terhadap standar arsitektur diawasi secara formal melalui proses \textit{review}.
-    \item Dukungan manajemen senior sudah kuat dalam pengambilan keputusan berbasis EA.\\
-  \end{enumerate}
-
-  \item  Level 5 (\textit{Optimizing}) \\
-  Pada tahap ini, organisasi telah mencapai kematangan penuh dan menjadikan EA sebagai instrumen utama dalam inovasi serta transformasi bisnis. Ciri-ciri utama tahapan ini yaitu:
-  \begin{enumerate}[a.]
-    \item EA sepenuhnya terintegrasi ke dalam tata kelola dan proses bisnis organisasi.
-    \item Proses perbaikan dilakukan secara berkelanjutan melalui mekanisme umpan balik.
-    \item EA menjadi dasar bagi inovasi digital dan efisiensi lintas divisi.
-    \item Organisasi berbagi praktik terbaik antar unit dan bahkan antar organisasi.
-    \item Nilai bisnis dari penerapan EA diukur dan dievaluasi secara berkesinambungan.\\
-  \end{enumerate}
-\end{enumerate}
+\begin{landscape}
+\input{table/tabelEAMM.tex}
+\end{landscape}
 
 \section{\textit{Best Practice} dan Studi Terkait}
 \subsection{SAP LeanIX sebagai \textit{Platform} Pendukung Implementasi \textit{Enterprise Architecture}}
