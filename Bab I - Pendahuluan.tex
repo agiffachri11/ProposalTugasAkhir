@@ -5,34 +5,40 @@
 \label{chap:pendahuluan}
 % --- Latar Belakang ---
 \section{Latar Belakang}
-Transformasi digital menjadi salah satu faktor utama yang memengaruhi keberlangsungan dan daya saing organisasi di berbagai sektor industri. Perkembangan Teknologi Informasi (TI) yang cepat memaksa organisasi untuk menyesuaikan diri dengan cara-cara baru dalam mengelola data, layanan, dan proses bisnis. 
-Menurut \textcite{juraida2024enterprise}, penerapan kerangka kerja \textit{Enterprise Architecture} (EA) menjadi elemen strategis yang berperan penting dalam mendukung transformasi digital melalui penyelarasan antara strategi bisnis dan strategi TI organisasi. 
+Transformasi digital merupakan salah satu faktor yang memengaruhi keberlangsungan organisasi.
+Perkembangan Teknologi Informasi (TI) memaksa organisasi untuk menyesuaikan proses bisnis dan layanan.
+Menurut \textcite{juraida2024enterprise}, \textit{Enterprise Architecture} (EA)  merupakan elemen yang berperan dalam mendukung transformasi digital
+melalui penyelarasan antara strategi bisnis dan strategi Teknologi Informasi (TI) organisasi.
 
-Konsep EA pada awalnya berkembang sebagai pendekatan sistematis untuk merancang arsitektur sistem informasi organisasi. Namun, EA tidak hanya berfokus pada aspek teknologi, tetapi juga mencakup dimensi strategis, bisnis, aplikasi, data, infrastruktur, dan keamanan. Pendekatan ini memungkinkan organisasi untuk mengidentifikasi, merancang, dan mengelola hubungan antara komponen-komponen bisnis dan TI secara terintegrasi. 
-Penelitian oleh \textcite{maita2022perancangan}, menunjukkan bahwa penerapan EA dengan metode TOGAF-ADM pada Usaha Mikro, Kecil, dan Menengah (UMKM) di Indonesia dapat mempercepat integrasi sistem dan meningkatkan efisiensi operasional organisasi. Hal ini menunjukkan bahwa EA dapat diterapkan di berbagai skala organisasi ataupun bisnis selama memiliki tata kelola dan strategi yang jelas.
+Aspek EA yang diperlukan salah satunya yaitu tata kelola yang jelas untuk mengelola arsitektur, mengambil keputusan, dan kepatuhan terhadap arsitektur yang dirancang.
+Karakterisitik EA harus diintegrasikan dengan praktik manajemen tata kelola agar EA dapat dikelola secara berkelanjutan \autocite{nugroho2016enterprise}.
 
-\textcite{lase2019developing} menjelaskan bahwa penerapan \textit{framework} EA seperti TOGAF atau Zachman tidak berjalan optimal karena tidak sepenuhnya sesuai dengan konteks dan kebutuhan. 
-Faktor yang menyebabkan EA sulit diimplementasikan secara efektif seperti kompleksitas organisasi, keterbatasan sumber daya, dan kurangnya dukungan manajemen. 
+\textcite{virantina2020digital} menegaskan efektivitas EA sangat bergantung kepada kemampuan organisasi dalam mengelola siklus hidup arsitektur, termasuk bagaimana EA digunakan untuk mendukung proses transformasi digital, manajemen data, dan efisiensi operasional. 
+Penerapan tata kelola EA juga memastikan pembagian peran, tanggung jawab, dan mekanisme evaluasi untuk memastikan keberlanjutan EA.
 
-Aspek lain yang sering diabaikan dalam penerapan EA adalah \textit{EA governance}. \textcite{virantina2020digital} menegaskan bahwa efektivitas EA sangat bergantung pada kemampuan organisasi dalam mengelola siklus hidup arsitektur, termasuk bagaimana EA digunakan untuk mendukung transformasi digital, 
-manajemen data, dan efisiensi operasional. Penerapan \textit{EA governance} yang baik juga memastikan adanya pembagian peran, tanggung jawab, serta mekanisme evaluasi yang terukur untuk memastikan keberlanjutan EA.
+Untuk memastikan tata kelola EA berjalan efektif, TOGAF menyediakan \textit{Architecture Capability Maturity Model} (ACMM) yang digunakan untuk menilai tingkat kematangan kapabilitas arsitektur organisasi.
+Model ini memiliki 5 tingkatan dan pada level 3 (\textit{defined}), proses tata kelola EA telah terdokumentasi, dilaksanakan secara konsisten, dan memiliki struktur peran yang jelas \autocite{TOGAF_Standard_10th}.
+Dengan demikian, tingkat kematangan ini dijadikan acuan untuk menilai tata kelola EA Paragon Corp dan mengevaluasi dimensi yang perlu diperbaiki.
 
-Selain itu, penerapan EA juga membutuhkan dukungan kuat dari manajemen puncak dan budaya organisasi yang mendukung kolaborasi lintas divisi. Menurut \textcite{sasongko2024enterprise}, \textit{Enterprise Architecture Management} (EAM) tidak hanya berfungsi sebagai dokumentasi sistem, tetapi juga sebagai instrumen manajerial yang memfasilitasi komunikasi strategis antara pimpinan, divisi bisnis, dan tim TI. 
-Dengan demikian, EA dapat menjadi alat koordinasi yang menghubungkan visi jangka panjang perusahaan dengan aktivitas operasional sehari-hari.
+Penerapan EA memerlukan evaluasi terhadap seberapa efektif tata kelolanya.
+Efektivitas ini bisa diketahui melalui tingkat kepatuhan proyek terhadap standar, dokumentasi yang dihasilkan, dan keterlibatan pemangku kepentingan \autocite{foorthuis2016theory}.
+Cara ini selaras dengan TOGAF, yaitu pentingnya melakukan evaluasi terhadap kapabilitas arsitektur untuk meningkatkan tingkat kematangan tata kelola organisasi.
 
-Pada perusahaan \textit{Beauty} FMCG seperti Paragon Corp, kebutuhan \textit{EA governance} semakin penting karena kompleksitas sistem aplikasi, integrasi lintas tim, dan pengelolaan data produk yang masif. Perusahaan memerlukan model \textit{EA governance} yang mampu mengatur proses pembaruan artefak, standarisasi dokumentasi, serta memastikan bahwa semua inisiatif mendukung arah strategis organisasi. 
-Perusahaan juga mengadopsi \textit{platform} manajemen arsitektur seperti SAP LeanIX untuk mendokumentasikan dan memantau integrasi aplikasi, namun efektivitasnya sangat bergantung pada pola kerja dan mekanisme \textit{governance} yang diterapkan.
+Pada praktik organisasi, tata kelola EA yang gagal menimbulkan banyak risiko.
+Paragon Corp merupakan salah satu perusahaan yang memiliki alur tata kelola EA tetapi belum dijalankan secara formal. 
+Meskipun tim \textit{Enterprise Architecture} di Paragon Corp baru dibentuk sejak tahun lalu, belum ada mekanisme rutin untuk \textit{architecture review} dan persetujuan arsitektur.
+Kondisi ini menyebabkan duplikasi sistem dan ketiadaan standar arsitektural karena belum ada referensi terhadap arsitektur sebelumnya.
+Evaluasi tata kelola EA menemukan bahwa aspek perancangan EA yang sudah didefinisikan, namun belum dikelola secara menyeluruh akan menghambat efektivitas EA sebagai kerangka strategis \autocite{ghiffari2022evaluasi}.
 
-Dengan mempertimbangkan berbagai tantangan tersebut, penelitian ini berfokus pada perancangan \textit{EA governance} yang dapat meningkatkan efektivitas peran EA dalam mendukung pengambilan keputusan strategis di perusahaan Paragon Corp. Penelitian ini diharapkan dapat memberikan kontribusi praktis bagi Paragon Corp dalam memperkuat proses transformasi digital, 
-serta memberikan acuan bagi organisasi lain dalam mengembangkan \textit{EA Governance} yang sesuai dengan konteks industri dan budaya kerja di Indonesia.
+Dengan mempertimbangkan tantangan tersebut, penelitian ini berfokus kepada analisis perbaikan tata kelola EA sehingga meningkatkan efektivitas peran EA dalam mengambil keputusan di Paragon Corp. 
 
 % --- Rumusan Masalah ---
 \section{Rumusan Masalah}
 Berdasarkan latar belakang masalah yang telah diuraikan di atas, maka rumusan masalah yang akan menjadi pokok pembahasan dalam pengerjaan tugas akhir ini adalah sebagai berikut:
 \begin{enumerate}
-\item	Bagaimana efektivitas \textit{EA Governance} saat ini di Paragon Corp?
-\item	Apa saja \textit{gap} yang perlu ditangani untuk mencapai tingkat kematangan \textit{(maturity level)} 3 \textit{EA Governance}?
-\item	Bagaimana rancangan \textit{EA Governance} yang lebih terstruktur dan mampu memberikan dampak terhadap pengambilan keputusan strategis perusahaan?
+\item	Bagaimana efektivitas tata kelola EA saat ini di Paragon Corp?
+\item	Apa saja \textit{gap} yang perlu ditangani untuk mencapai tingkat kematangan level 3 tata kelola EA?
+\item	Bagaimana rancangan tata kelola EA yang lebih terstruktur dan mampu memberikan dampak terhadap pengambilan keputusan strategis perusahaan?
 \item   Bagaimana cara mengukur peningkatan efektivitas dan dampak penerapan EA setelah dilakukan perbaikan tata kelola?
 \end{enumerate}
 
@@ -40,17 +46,10 @@ Berdasarkan latar belakang masalah yang telah diuraikan di atas, maka rumusan ma
 \section{Tujuan}
 Tujuan dari peneliatian ini adalah untuk:
 \begin{enumerate}
-\item	Menganalisis kondisi \textit{EA Governance} yang saat ini diterapkan di Paragon Corp.
-\item	Mengidentifikasi \textit{gap} antara kondisi saat ini dengan praktik terbaik \textit{(best practice)} EA pada \textit{maturity level} 3.
-\item	Merancang model perbaikan \textit{EA Governance} yang efektif dan sesuai dengan konteks organisasi Paragon Corp.
+\item	Menganalisis kondisi tata kelola EA yang saat ini diterapkan di Paragon Corp.
+\item	Mengidentifikasi \textit{gap} antara kondisi saat ini dengan \textit{best practice} EA pada ingkat kematangan level 3 tata kelola EA.
+\item	Merancang model perbaikan tata kelola EA yang efektif dan sesuai dengan konteks organisasi.
 \item   Mengevaluasi dampak penerapan model perbaikan terhadap efektivitas kinerja EA.
-\end{enumerate}
-
-% --- Batasan Masalah ---
-\section{Batasan Masalah}
-Agar penelitian ini dapat dilakukan dengan terarah, maka penelitian ini dibatasi pada:
-\begin{enumerate}
-\item	Penelitian difokuskan pada perancangan \textit{(EA governance)} di lingkungan Paragon Corp, khususnya dalam konteks inisiatif digital perusahaan.
 \end{enumerate}
 
 % --- Metodologi Pengerjaan TA ---
@@ -89,8 +88,4 @@ Secara umum, tahapan metodologi penelitian ini terdiri atas beberapa langkah ber
         \item \textit{Expert review} bersama \textit{stakeholder} internal Paragon Corp.
         \item Analisis perbandingan antara kondisi sebelum dan sesudah penerapan model secara konseptual. \\
     \end{enumerate}
-
-    \item {Tahap penyusunan laporan tugas akhir} \\
-    Tahap akhir adalah penyusunan laporan tugas akhir yang memuat seluruh hasil analisis dan rancangan model. Laporan disusun sesuai pedoman akademik yang berlaku di 
-    Program Studi Sistem dan Teknologi Informasi, Institut Teknologi Bandung.
 \end{enumerate}
