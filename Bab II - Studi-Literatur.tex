@@ -3,50 +3,29 @@
 % ==========================================
 \chapter{STUDI LITERATUR}
 \label{chap:studi-literatur}
-\section{Konsep \textit{Enterprise Architecture} (EA)}
+\section{Konsep Arsitektur \textit{Enterprise}}
 
 \subsection{Pengertian dan Tujuan \textit{Enterprise Architecture}}
-% Contoh gambar dapat dilihat pada Gambar \ref{gambar:jaringan}. Gambar dan judulnya diposisikan di tengah. Nomor gambar tidak diakhiri tanda titik. Gambar tersebut dibuat menggunakan aplikasi draw.io dan disimpan ke format PNG setelah dengan zoom setting pada angka 300\%. Ukuran gambar yang ditampilkan dapat diatur dengan mengubah nilai \textit{width} dalam sintaks \textit{includegraphics}.
-% Definisi dari \textit{Enterprise Architecture} (EA) antara lain sebagai berikut:
-% \begin{enumerate}
-%   \item Menurut \textcite{ross2006enterprise}, \textit{enterprise architecture} adalah cara organisasi menghubungkan proses bisnis dengan infrastruktur Teknologi Informasi (TI) untuk memastikan integrasi dan standarisasi sesuai dengan model operasional perusahaan.
-%   \item Menurut \textcite{ahlemann2012strategic}, \textit{enterprise architecture} adalah penetapan, pemeliharaan, dan penerapan serangkaian panduan, prinsip desain, dan aturan tata kelola yang terpadu sehingga struktur teknologi dan proses bisnis selalu selaras dan efektif dalam mencapai visi dan strategi jangka panjang perusahaan.
-%   \item Menurut \textcite{luisi2014pragmatic}, \textit{enterprise architecture} adalah pengembangan kerangka kerja Teknologi Informasi (TI) yang memfasilitasi arah bisnis dan mengatasi kendala utama, dengan mewakili berbagai kepentingan pemangku kepentingan bisnis di seluruh perusahaan. \\
-% \end{enumerate}
+Arsitektur \textit{Enterprise} (AE) adalah metode yang membantu organisasi memetakan strategi bisnis, proses, informasi, dan teknologi yang mendukungnya.
+AE berfungsi sebagai kerangka yang memastikan proses bisnis dan Teknologi Informasi (TI) berjalan sesuai standar untuk mencapai tujuan operasional perusahaan \autocite{ross2006enterprise}.
 
-% Dari pengertian-pengertian tersebut dapat disimpulkan bahwa \textit{enterprise architecture} merupakan fondasi atau panduan tertentu yang memastikan Teknologi Informasi (TI) 
-% dan cara kerja perusahaan atau proses bisnis saling terhubung untuk mendukung pencapaian tujuan strategis organisasi.
+\textcite{ahlemann2012strategic} menjelaskan AE merupakan suatu prinsip, aturan, dan tata kelola yang digunakan oleh organisasi untuk memastikan konsistensi arsitektur dalam mendukung tujuan perusahaan.
+Definisi ini menegaskan bahwa AE bukan hanya sekedar dokumentasi, tetapi juga pendekatan manajemen agar tercapainya tujuan perusahaan.
 
-% Menurut \textcite{minoli2008enterprise}, sasaran EA adalah menciptakan lingkungan Teknologi Informasi (TI) yang terpadu. 
-% Hal ini dicapai melalui standarisasi perangkat keras dan sistem perangkat lunak, mendorong penggunaan kembali aset TI, dan menerapkan metode yang sama dalam manajemen 
-% proyek untuk pengembangan perangkat lunak di seluruh unit organisasi. Semua upaya ini dilakukan sambil tetap memastikan keselarasan penuh antara TI dengan strategi dan aspek bisnis organisasi. 
-% Hasil yang diharapkan dari penerapan EA adalah menjadikan fungsi TI menjadi lebih hemat biaya, lebih strategis, dan lebih responsif terhadap kebutuhan bisnis.
+Sementara itu, TOGAF menjelaskan AE sebagai metode dalam merancang, mengembangkan, dan mengelola arsitektur bisnis, aplikasi, data, dan teknologi.
+AE berfungsi sebagai peta yang menggambarkan bagaimana organisasi terhubung dan berkembang untuk mendukung strategi perusahaan \autocite{TOGAF_Standard_10th}.
 
-% Tujuan dari EA adalah merancang sebuah \textit{roadmap} yang mencakup aset Teknologi Informasi (TI), proses bisnis, dan prinsip tata kelola. 
-% \textit{Roadmap} ini harus mampu mendukung tercapainya strategi bisnis sekaligus menjelaskan secara rinci bagaimana TI akan digunakan untuk merealisasikan strategi tersebut \autocite{minoli2008enterprise}. 
-% Tabel \ref{tbl:tujuanEA} menunjukkan persentase dari tujuan mengapa perusahaan membangun \textit{enterprise architecture}.
+Dari berbagai definisi tersebut, disimpulkan bahwa AE berperan sebagai landasan arsitektur yang menghubungkan strategi perusahaan dan operasional secara terstruktur.
+Dengan demikian, AE dapat meningkatkan efisiensi operasional, mengurangi redundansi aplikasi, dan memastikan Teknologi Informasi (TI) tetapi selaras dengan kebutuhan bisnis.
 
-% \input{table/tabelTujuanEA.tex}
-\textit{Enterprise Architecture} (EA) adalah metode yang membantu organisasi memetakan strategi bisnis, proses, informasi, dan teknologi yang mendukungnya.
-EA berfungsi sebagai kerangka yang memastikan proses bisnis dan Teknologi Informasi (TI) berjalan sesuai standar untuk mencapai tujuan operasional perusahaan \autocite{ross2006enterprise}.
+\subsection{Domain Utama Arsitektur \textit{Enterprise}}
+Arsitektur \textit{Enterprise} (AE) dibentuk oleh beberapa kompoenen yang disebut domain arsitektur.
+Domain ini mengategorikan aspek yang harus diperhatikan oleh arsitek untuk merancang sistem yang kompleks \autocite{jager2023getting}.
 
-\textcite{ahlemann2012strategic} menjelaskan EA merupakan suatu prinsip, aturan, dan tata kelola yang digunakan oleh organisasi untuk memastikan konsistensi arsitektur dalam mendukung tujuan perusahaan.
-Definisi ini menegaskan bahwa EA bukan hanya sekedar dokumentasi, tetapi juga pendekatan manajemen agar tercapainya tujuan perusahaan.
-
-Sementara itu, TOGAF menjelaskan EA sebagai metode dalam merancang, mengembangkan, dan mengelola arsitektur bisnis, aplikasi, data, dan teknologi.
-EA berfungsi sebagai peta yang menggambarkan bagaimana organisasi terhubung dan berkembang untuk mendukung strategi perusahaan \autocite{TOGAF_Standard_10th}.
-
-Dari berbagai definisi tersebut, disimpulkan bahwa EA berperan sebagai landasan arsitektur yang menghubungkan strategi perusahaan dan operasional secara terstruktur.
-Dengan demikian, EA dapat meningkatkan efisiensi operasional, mengurangi redundansi aplikasi, dan memastikan Teknologi Informasi (TI) tetapi selaras dengan kebutuhan bisnis.
-
-\subsection{Domain Utama \textit{Enterprise Architecture}}
-\textit{Enterprise Architecture} (EA) dibentuk oleh beberapa kompoenen yang disebut domain arsitektur.
-Domain ini mengkategorikan aspek yang harus diperhatikan oleh arsitek untuk merancang sistem yang kompleks \autocite{jager2023getting}.
-
-Dalam TOGAF, EA terbagi menjadi empat domain arsitektur yang berfungsi sebagai subsistem dari keleuruhan arsitektur perusahaan.
+Dalam TOGAF, AE terbagi menjadi empat domain arsitektur yang berfungsi sebagai subsistem dari keleuruhan arsitektur perusahaan.
 Pembagian domain ini menjadi struktur utama dalam \textit{Architecture Development Method} (ADM) \autocite{TOGAF_Standard_10th}.
-Gambar \ref{gambar:adm} menunjukkan siklus \textit{Architecture Development Method} (ADM) yang digunakan untuk mengembangkan, mengelola, dan memelihara siklus EA pada organisasi.
-Sementara itu, Gambar \ref{gambar:domain} menunjukkan struktur domain arsitektur EA.
+Gambar \ref{gambar:adm} menunjukkan siklus \textit{Architecture Development Method} (ADM) yang digunakan untuk mengembangkan, mengelola, dan memelihara siklus AE pada organisasi.
+Sementara itu, Gambar \ref{gambar:domain} menunjukkan struktur domain arsitektur AE.
 
 \begin{figure}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
 	\centering
@@ -60,52 +39,52 @@ Sementara itu, Gambar \ref{gambar:domain} menunjukkan struktur domain arsitektur
 	\centering
   \captionsetup{justification=centering}
     	\includegraphics[width=0.7\textwidth]{image/domainlayer.png}
-	\caption{Domain Arsitektur \textit{Layer} EA}
+	\caption{Domain Arsitektur \textit{Layer} AE}
 	\label{gambar:domain}
 \end{figure}
 
 \begin{enumerate}
-    \item \textit{Business Architecture} \\
-    Domain ini terletak pada \textit{phase} B dari \textit{Architecture Development Method} (ADM) yang menjelaskan tentang strategi, tujuan, kapabilitas, dan proses bisnis organisasi. 
+    \item Arsitektur Bisnis \\
+    Domain ini terletak pada fase B dari \textit{Architecture Development Method} (ADM) yang menjelaskan tentang strategi, tujuan, kapabilitas, dan proses bisnis organisasi. 
     Domain ini menggambarkan cara organisasi untuk mencapai nilai yang diberikan kepada pelanggan.\\
 
-    \item \textit{Information Systems Architectures} \\
+    \item Arsitektur Teknologi Informasi \\
     Domain ini berperan dalam menjembatani kebutuhan bisnis dengan Teknologi Informasi (TI) yang mendukungnya, dan dipecah menjadi dua sub-komponen utama.
     \begin{enumerate}[a.]
-        \item \textit{Data Architecture} \\
-        Domain ini terletak pada \textit{phase} C dari \textit{Architecture Development Method} (ADM) yang menjelaskan struktur dan jenis data yang dapat mendukung proses bisnis secara efektif. 
+        \item Arsitektur Data \\
+        Domain ini terletak pada fase C dari \textit{Architecture Development Method} (ADM) yang menjelaskan struktur dan jenis data yang dapat mendukung proses bisnis secara efektif. 
 
-        \item \textit{Application Architecture} \\
-        Domain ini terletak pada \textit{phase} C dari \textit{Architecture Development Method} (ADM) yang menjelaskan jenis aplikasi aplikasi yang digunakan untuk mendukung proses bisnis. \\
+        \item Arsitektur Aplikasi \\
+        Domain ini terletak pada fase C dari \textit{Architecture Development Method} (ADM) yang menjelaskan jenis aplikasi aplikasi yang digunakan untuk mendukung proses bisnis. \\
     \end{enumerate}
 
-    \item \textit{Technology Architecture} \\
-    Domain ini terletak pada \textit{phase} D dari \textit{Architecture Development Method} (ADM) yang menjelaskan infrastruktur Teknologi Informasi (TI) yang diperlukan untuk menjalankan aplikasi dan mengelola data perusahaan. 
+    \item Arsitektur Teknologi \\
+    Domain ini terletak pada fase D dari \textit{Architecture Development Method} (ADM) yang menjelaskan infrastruktur Teknologi Informasi (TI) yang diperlukan untuk menjalankan aplikasi dan mengelola data perusahaan. 
 \end{enumerate}
 
-\subsection{Peran \textit{Enterprise Architecture} dalam Transformasi Digital}
-Menurut \textcite{josey2017togaf}, \textit{Enterprise Architecture} (EA) berperan dalam melakukan transformasi digital melalui metode \textit{Architecture Development Method} (ADM).
-Selain itu EA membantu perusahaan dalam menata ulang proses bisnis dan Teknologi Informasi (TI) melalui proses tata kelola yang disediakan TOGAF.
+\subsection{Peran Arsitektur \textit{Enterprise} dalam Transformasi Digital}
+Menurut \textcite{josey2017togaf}, Arsitektur \textit{Enterprise} (AE) berperan dalam melakukan transformasi digital melalui metode \textit{Architecture Development Method} (ADM).
+Selain itu AE membantu perusahaan dalam menata ulang proses bisnis dan Teknologi Informasi (TI) melalui proses tata kelola yang disediakan TOGAF.
 
-\textcite{vandewetering2021dynamicenterprisearchitecturecapabilities} menjelaskan bahwa penerapan EA akan membantu perusahaan dalam meningkatkan kegiatan operasional dan mendukung keberhasilan transformasi digital.
-Kapabilitas EA seperti kemampuan adaptif dan integrasi antar domain akan membantu perusahaan terhadap inovasi proses dan keselarasan bisnis dan Teknologi Informasi (TI).
+\textcite{vandewetering2021dynamicenterprisearchitecturecapabilities} menjelaskan bahwa penerapan AE akan membantu perusahaan dalam meningkatkan kegiatan operasional dan mendukung keberhasilan transformasi digital.
+Kapabilitas AE seperti kemampuan adaptif dan integrasi antar domain akan membantu perusahaan terhadap inovasi proses dan keselarasan bisnis dan Teknologi Informasi (TI).
 
-Walaupun EA memberikan kerangka arsitektur perusahaan, penerapannya tidak akan efektif tanpa mekanisme tata kelola arsitektur.
+AE tidak akan efektif tanpa mekanisme tata kelola arsitektur, meskipun memiliki kerangka arsitektur perusahaan.
 TOGAF menjelaskan bahwa tata kelola arsitektur diperlukan supaya pengembangan dan implementasi arsitektur berjalan secara konsisten dan terkontrol \autocite{TOGAF_Standard_10th}.
-Oleh karena itu, perusahaan harus memiliki tata kelola arsitektur agar EA dapat tetap berjalan dan mendukung tujuan strategis perusahaan
+Oleh karena itu, perusahaan harus memiliki tata kelola arsitektur agar AE dapat tetap berjalan dan mendukung tujuan strategis perusahaan.
 
-\section{\textit{Enterprise Architecture Governance}}
-\subsection{Definisi dan Tujuan \textit{Enterprise Architecture Governance}}
-Menurut \textcite{korhonen2009ea}, \textit{EA Governance} adalah mekanisme kontrol yang berorientasi ke masa depan yang bertujuan untuk merancang kondisi arsitektur perusahaan di masa depan demi mendukung strategi bisnis. 
-\textit{EA Governance} menekankan pada perencanaan dan efektivitas eksternal organisasi secara keseluruhan.
-Tujuan \textit{EA Governance} adalah memastikan pengembangan arsitektur bersifat sistemik dan mengarah pada tujuan strategis jangka panjang.
+\section{Tata Kelola Arsitektur \textit{Enterprise}}
+\subsection{Definisi dan Tujuan Tata Kelola Arsitektur \textit{Enterprise}}
+Menurut \textcite{korhonen2009ea}, tata kelola Arsitektur \textit{Enterprise} (AE) adalah mekanisme kontrol yang berorientasi ke masa depan yang bertujuan untuk merancang kondisi arsitektur perusahaan di masa depan demi mendukung strategi bisnis. 
+Tata kelola AE menekankan pada perencanaan dan efektivitas eksternal organisasi secara keseluruhan.
+Tujuan tata kelola AE adalah memastikan pengembangan arsitektur bersifat sistemik dan mengarah pada tujuan strategis jangka panjang.
 
-TOGAF menjelaskan bahwa \textit{EA Governance} merupakan proses yang digunakan untuk mengelola dan mengawasi pengembangan implementasi arsitektur perusahaan supaya sesuai dengan tujuan perusahaan \autocite{TOGAF_Standard_10th}.
-\textcite{foorthuis2016theory} menambahkan bahwa \textit{EA Governance} diperlukan supaya arsitektur dijalankan secara konsisten dalam setiap proyek dan keputusan arsitektur dapat dipertanggungjawabkan.
-Praktik EA akan efektif ketika perusahaan memiliki mekanisme pengawasan, kontrol terhadap kepatuhan, dan forum resmi dalam mengambil keputusan.
+TOGAF menjelaskan bahwa tata kelola AE merupakan proses yang digunakan untuk mengelola dan mengawasi pengembangan implementasi arsitektur perusahaan supaya sesuai dengan tujuan perusahaan \autocite{TOGAF_Standard_10th}.
+\textcite{foorthuis2016theory} menambahkan bahwa tata kelola AE diperlukan supaya arsitektur dijalankan secara konsisten dalam setiap proyek dan keputusan arsitektur dapat dipertanggungjawabkan.
+Praktik AE akan efektif ketika perusahaan memiliki mekanisme pengawasan, kontrol terhadap kepatuhan, dan forum resmi dalam mengambil keputusan.
 
-\subsection{Komponen Utama \textit{Enterprise Architecture Governance}}
-Menurut TOGAF, \textit{EA Governance} memiliki komponen-komponen utama sebagai berikut \autocite{TOGAF_Standard_10th}:
+\subsection{Komponen Utama Tata Kelola Arsitektur \textit{Enterprise}}
+Menurut TOGAF, tata kelola AE memiliki komponen-komponen utama sebagai berikut \autocite{TOGAF_Standard_10th}:
 \begin{enumerate}
   \item Struktur Tata Kelola \\
   Struktur tata kelola menjelaskan tentang peran formal seperti \textit{architecture board}.
@@ -113,7 +92,7 @@ Menurut TOGAF, \textit{EA Governance} memiliki komponen-komponen utama sebagai b
 
   \item Proses Tata Kelola \\
   Menurut TOGAF, proses tata kelola berfungsi untuk mengidentifikasi, mengelola, dan menyebarluaskan informasi yang berkaitan dengan arsitektur.
-  Komponen \textit{governance process} yang dijelaskan dalam TOGAF meliputi: 
+  Proses tata kelola yang dijelaskan dalam TOGAF meliputi: 
   \begin{enumerate}[a.]
     \item \textit{Policy Management and Take-On} \\
     Proses ini mengatur perubahan arsitektur dan artefak yang baru dipublikasikan.
@@ -128,23 +107,23 @@ Menurut TOGAF, \textit{EA Governance} memiliki komponen-komponen utama sebagai b
     Proses ini memastikan arsitektur dipantau berdasarkan kriteria yang telah disepakati.
 
     \item \textit{Business Control and Environment Management} \\
-    Proses ini terkait dengan pengelolaan dokumen, arsitektur, dan pengelolaan informasi.
+    Proses ini terkait dengan pengelolaan dokumen, arsitektur, dan pengelolaan informasi. \\
   \end{enumerate}
 
-  \textcite{foorthuis2016theory} juga menekankan bahwa \textit{governance process} berperan penting dalam mencegah ketidakkonsistenan arsitektur.\\
+  \textcite{foorthuis2016theory} juga menekankan bahwa proses tata kelola berperan penting dalam mencegah ketidakkonsistenan arsitektur.\\
 
   \item Artefak Arsitektur \\
-  TOGAF menegaskan bahwa semua artefak arsitektur harus dikelola melalui \textit{governance process}.
+  TOGAF menegaskan bahwa semua artefak arsitektur harus dikelola melalui proses tata kelola.
   Artefak ini berfungsi sebagai pedoman bagi seluruh tim dalam mengembangkan solusi Teknologi Informasi (TI) yang konsisten.\\
 \end{enumerate}
 
-\subsection{Implementasi \textit{Enterprise Architecture Governance}}
-Menurut TOGAF, implementasi tata kelola diatur dalam \textit{phase} G dari \textit{Architecture Development Method} (ADM).
+\subsection{Implementasi Tata Kelola Arsitektur \textit{Enterprise}}
+Menurut TOGAF, implementasi tata kelola diatur dalam fase G dari \textit{Architecture Development Method} (ADM).
 Pada bagian ini memastikan bahwa proyek implementasi mengikuti arsitektur yang telah disetujui dan mematuhi standar perusahaan \autocite{TOGAF_Standard_10th}.
 Langkah-langkah dalam fase G adalah sebagai berikut:
 \begin{enumerate}
   \item Konfirmasi Ruang Lingkup dan Prioritas untuk \textit{Deployment} \\
-  Pada tahap awal, ruang lingkup implementasi dan prioritas dikonfirmasi kembali seperti meninjau \textit{roadmap}, dependensi, dan \textit{gap analysis} arsitektur saat ini dan arsitektur target. \\
+  Pada tahap awal, ruang lingkup implementasi dan prioritas dikonfirmasi kembali seperti meninjau \textit{roadmap}, dependensi, dan analisis \textit{gap} arsitektur saat ini dan arsitektur target. \\
 
   \item Mengidentifikasi Sumber Daya \\
   Perusahaan perlu mengidentifikasi sumber daya dan kompetensi yang diperlukan untuk implementasi.
@@ -157,58 +136,98 @@ Langkah-langkah dalam fase G adalah sebagai berikut:
   Selama implementasi, peninjauan kepatuhan dilakukan untuk memastikan desain dan hasil sesuai dengan arsitektur yang telah ditetapkan.\\
 
   \item Implementasi Proses Bisnis dan Teknologi Informasi \\
-  Solusi yang dibangun akan dijalankan pada lingkungan operasional yang akan diikuti dokumentasi dan \textit{updating baseline architecture} di \textit{repository} perusahaan.\\
+  Solusi yang dibangun akan dijalankan pada lingkungan operasional yang akan diikuti dokumentasi dan \textit{updating baseline architecture} di repositori perusahaan.\\
 
   \item Meninjau \textit{Post Implementation} dan \textit{Close Implementation} \\
   Setelah sistem diluncurkan, TOGAF mengharuskan tinjauan untuk menilai pencapaian tujuan arsitektur dan memperbarui artefak arsitektur.
   Setelah itu proyek ditutup secara formal.
 \end{enumerate}
 
-\subsection{Tantangan Penerapan \textit{Enterprise Architecture Governance}}
-Menurut \textcite{korhonen2009ea}, tantangan penerapan \textit{EA governance} antara lain sebagai berikut:
+\subsection{Tantangan Penerapan Tata Kelola Arsitektur \textit{Enterprise}}
+Menurut \textcite{korhonen2009ea}, tantangan penerapan tata kelola Arsitektur \textit{Enterprise} (AE) antara lain sebagai berikut:
 \begin{enumerate}
-  \item Konsep \textit{EA Governance} belum didefinisikan secara memadai yang menyulitkan implementasi konsisten dan terarah.
-  \item Minimnya keterlibatan sisi bisnis sehingga potensi EA di perusahaan tidak terealisasi.
-  \item Proses manajemen yang digunakan dalam \textit{IT Governance} tidak memadai untuk \textit{EA Governance} yang bersifat holistik dan strategis.
-  \item Kurangnya badan tata kelola perantara \textit{(intermediating governance body)} antara \textit{Chief Enterprise Architect} dan Eksekutif Bisnis.
+  \item Konsep tata kelola AE belum didefinisikan secara memadai yang menyulitkan implementasi konsisten dan terarah.
+  \item Minimnya keterlibatan sisi bisnis sehingga potensi AE di perusahaan tidak terealisasi.
+  \item Proses manajemen yang digunakan dalam tata kelola Teknologi Informasi (TI) tidak memadai untuk tata kelola AE yang bersifat holistik dan strategis.
+  \item Kurangnya badan tata kelola perantara \textit{(intermediating governance body)} antara \textit{Chief Enterprise Architect} dan Eksekutif Bisnis.\\
 \end{enumerate}
 
-\section{\textit{Enterprise Architecture Maturity Model (EAMM)}}
-\subsection{Pengertian dan Tujuan \textit{Enterprise Architecture Maturity Model (EAMM)}}
-Menurut \textcite{jager2023getting}, \textit{Enterprise Architecture Maturity Model} (EAMM) adalah kerangka yang digunakan untuk menilai sejauh mana penerapan EA dalam organisasi
-telah berjalan secara efektif dan berkesinambungan. Model ini membantu organisasi memahami posisi mereka dalam perjalanan pengembangan arsitektur perusahaan, serta memberikan panduan untuk meningkatkan kualitas tata kelola dan implementasi EA secara bertahap.
+Berdasarkan penjelasan-penjelasan sebelumnya, dapat disimpulkan bahwa tata kelola AE menjadi dasar untuk mencapai keberhasilan implementasi arsitektur perusahaan.
+Pemahaman terhadap tata kelola ini, menjadi landasan penilaian tingkat kematangan arsitektur \textit{enterprise}, karena tata kelola merupakan salah satu aspek dalam mengukur sejauh mana arsitektur diterapkan pada perusahaan.
 
-Tujuan utama dari EAMM adalah untuk menyediakan alat ukur yang sistematis dalam mengevaluasi kemampuan organisasi dalam mengelola proses arsitektur, sekaligus mengidentifikasi area yang perlu ditingkatkan. 
-Dengan memahami tingkat kematangan EA, organisasi dapat merencanakan langkah perbaikan yang lebih terarah, memastikan keselarasan antara strategi bisnis dan teknologi informasi, serta meningkatkan nilai tambah EA terhadap pengambilan keputusan manajerial \autocite{jager2023getting}.
+\section{\textit{Enterprise Architecture Maturity Model}}
+\subsection{Pengertian dan Tujuan \textit{Enterprise Architecture Maturity Model}}
+Menurut \textcite{jager2023getting}, \textit{Enterprise Architecture Maturity Model} (EAMM) adalah kerangka untuk menilai sejauh mana penerapan Arsitektur \textit{Enterprise} (AE) dalam perusahaan telah berjalan secara efektif.
+Model ini membantu perusahaan memahami posisi mereka dalam perjalanan pengembangan arsitektur perusahaan dan memberikan panduan untuk meningkatkan kualitas tata kelola dan implementasi AE secara bertahap. 
+Tujuan utama dari EAMM adalah alat untuk mengevaluasi kemampuan organisasi dalam mengelola proses arsitektur dan mengidentifikasi area yang perlu ditingkatkan.
 
-\subsection{Tingkatan \textit{Maturity Model}}
-Berdasarkan \textit{TOGAF Architecture Maturity Models}, penilaian EAMM dilakukan untuk memahami sejauh mana kapabilitas arsitektur telah diterapkan, dikelola, dan diintegrasikan dalam organisasi \autocite{TOGAF_Standard_10th}.
-Tabel \ref{tbl:EAMM} menunjukkan menyajikan \textit{maturity level} pada masing-masing dimensi sehingga memberikan gambaran komprehensif mengenai posisi kapabilitas arsitektur saat ini serta arah peningkatan yang diperlukan.
+\subsection{\textit{Enterprise Architecture Maturity Model} Menurut TOGAF}
+TOGAF menyediakan pendekatan \textit{maturity} yang memanfaatkan \textit{Architecture Maturity Models} (AMM) sebagai alat evaluasi dalam fase \textit{Architecture Capability Framework}.
+TOFAF mengacu pada prinsip bahwa \textit{maturity} berkembang secara bertahap \autocite{TOGAF_Standard_10th}.
+Pada Tabel \ref{tbl:EAMM} menunjukkan tingkat-tingkat \textit{maturity} AE yang umum digunakan dengan referensi TOGAF.
 
 \begin{landscape}
 \input{table/tabelEAMM.tex}
 \end{landscape}
 
-\section{\textit{Best Practice} dan Studi Terkait}
-\subsection{SAP LeanIX sebagai \textit{Platform} Pendukung Implementasi \textit{Enterprise Architecture}}
-SAP LeanIX merupakan \textit{platform} manajemen arsitektur perusahaan \textit{Enterprise Architecture Management} (EAM) yang digunakan secara luas dalam mengoptimalkan pengelolaan aplikasi, proses bisnis, dan infrastruktur TI organisasi.
-\textit{Platform} ini bertindak sebagai tempat utama untuk mendokumentasikan dan menganalisis arsitektur, sehingga membantu membuat keputusan strategis jadi lebih efektif. Beberapa fitur utama yang ditawarkan LeanIX meliputi \textit{Application Portfolio Management, 
-Interface Catalog}, dan \textit{Fact Sheet}. Fitur-fitur ini membantu perusahaan memetakan serta mengatur aplikasi yang mereka gunakan, menemukan keterkaitan antara berbagai sistem, dan mencatat detail krusial tentang aset teknologi serta proses bisnis dengan cara yang terorganisir \autocite{LeanixEAGov}.
+\subsection{Keterkaitan \textit{Enterprise Architecture Maturity Model} dengan Tata Kelola Arsitektur \textit{Enterprise}}
+\textit{Enterprise Architecture Maturity Model} dan Tata Kelola Arsitektur \textit{Enterprise} (AE) memiliki hubungan yang saling berkaitan.
+Tata kelola yang kuat merupakan prasyarat untuk mencapai tingkat kematangan yang lebih tinggi.
+Namun, praktik AE tidak dapat berkembang secara stabil jika proses dan struktur peran belum terdefinisi.
+TOGAF menekankan bahwa tata kelola merupakan komponen yang fundamental dari \textit{Architecture Capability Framework}, yang juga menjadi dasar penilaian \textit{maturity} \autocite{TOGAF_Standard_10th}.
+\textcite{foorthuis2016theory} menyatakan bahwa proses tata kelola yang baik akan meningkatkan kualitas implementasi AE yang nantinya akan menaikkan \textit{maturity} secara keseluruhan.
 
-Selain fungsi manajemen aplikasi, SAP LeanIX juga mendukung praktik \textit{EA Governance} dengan menyediakan alat pengawasan, proses standarisasi, serta pembuatan kebijakan dan prosedur sesuai kebutuhan organisasi.
-Perusahaan juga dapat membangun kerangka kerja \textit{governance} yang adaptif, menetapkan aturan pengelolaan perubahan arsitektur, serta memastikan setiap proyek IT selaras dengan tujuan bisnis \autocite{LeanixEAGov}.
+\section{SAP LeanIX sebagai \textit{Enabler} Tata Kelola Arsitektur \textit{Enterprise}}
+SAP LeanIX berperan dalam mengoperasikan Tata Kelola Arsitektur \textit{Enterprise} (AE) di berbagai perusahaan.
+LeanIX menyediakan repositori terpusat untuk dokumentasi arsitektur yang dilakukan secara konsisten.
+Melalui struktur \textit{fact sheet}, LeanIX menjaga standar dokumentasi lintas tim, mulai dari bisnis, aplikasi, data, dan infrastruktur.
+Fitur ini mendukung proses inti tata kelola seperti dokumentasi dan peninjauan arsitektur.
+Selain itu, keberadaaan repositori tunggal ini mencegah duplikasi sistem \autocite{LeanixEAGov}.
 
-\subsection{Studi Kasus Implementasi \textit{EA Governance}}
-Fungsi-fungsi utama SAP LeanIX telah banyak diaplikasikan dalam berbagai studi kasus di industri dan sektor publik guna meningkatkan praktik \textit{EA Governance}. Salah satu contoh di perusahaan Reckitt, SAP LeanIX digunakan untuk mendukung migrasi aplikasi menuju \textit{cloud} dan memfasilitasi sinergi lintas unit bisnis, 
-sehingga proses digitalisasi lebih efisien dan terukur \autocite{Christ2021LeanixReckitt}. Studi pada merger dua perusahaan asuransi besar, Helvetia dan Nationale Suisse, memperlihatkan LeanIX efektif dalam mempercepat penggabungan proses bisnis dan sistem teknologi, 
-melalui integrasi \textit{governance} serta pelaporan digital yang lebih transparan \autocite{Mone2018Helvetia}.
+\section{Studi dan Penelitian Terkait}
+\subsection{Implementasi Arsitektur \textit{Enterprise} di Pemerintahan}
+Penelitian yang dilakukan oleh \textcite{hanafi2023implementation} menguji hubungan antara kapabilitas Arsitektur \textit{Enterprise} (AE) dan tata kelola AE terhadap kinerja organisasi.
+Penelitian ini berfokus pada pemerintah daerah Provinsi Jawa Barat dalam konteks implementasi Sistem Pemerintahan Berbasis Elektronik (SPBE).
+Hasil analisis menunjukkan bahwa kapabilitas AE dan tata kelola AE memberikan pengaruh positif dan signifikan terhadap kinerja organisasi.
+Analisis ini memperkuat teori bahwa tata kelola AE merupakan aspek untuk meningkatkan kinerja organisasi.
 
-\subsection{Analisis Temuan Penelian Terdahulu}
-Hasil penelitian \textcite{Hanafi2023PeranEA} menegaskan bahwa pelaksanaan \textit{EA Governance} mampu memberikan dampak positif yang nyata terhadap peningkatan kinerja organisasi pemerintahan daerah. 
-Praktik \textit{EA Governance} yang dijalankan dengan baik berpengaruh pada penyusunan struktur organisasi yang rapi, memperlancar proses bisnis, serta meningkatkan kelincahan institusi dalam menghadapi perubahan lingkungan eksternal. Penelitian tersebut juga menunjukkan bahwa faktor kepemimpinan, bila diaplikasikan sebagai variabel moderasi, dapat memperkuat hubungan antara tata kelola EA dan efektivitas organisasi pemerintah.
+Meskipun demikian, fokus utama penelitian belum menguraikan proses tata kelola AE dan belum mengusulkan perbaikan tata kelola AE.
+Selain itu, penelitian ini belum fokus ke perancangan solusi operasional dengan \textit{platform Enterprise Architecture Management} (EAM) tertentu.
 
-Dalam penelitian tersebut memiliki kekurangan yang relevan sebagai dasar bagi tugas akhir ini seperti sebagai berikut: 
+\subsection{\textit{Enterprise Architecture Governance of Excellence}}
+Penelitian oleh \textcite{hillmann2024enterprise} berfokus kepada pengembangan tata kelola AE dalam konteks lingkungan federasi, yaitu organisasi besar yang terdiri dari unit-unit bisnis atau segmen yang beroperasi secara semi-otonom.
+Penelitian ini berfokus kepada komponen-komponen yang harus ada dalam tata kelola AE, seperti struktur peran dan tanggung jawab, kebijakan formal, pengambilan keputusan arsitektur, mekanisme kontrol dan pengawasan, portofolio AE, 
+dan penggunaan repositori AE untuk mengelola artefak dan keputusan arsitektur.
+Penelitian ini mennyajikan gambaran mengenai bagaimana komponen-komponen tersebut saling berkaitan dan membentuk sistem tata kelola yang konsisten.
+
+Namum, penelitian ini masih dominan bersifat konseptual dengan konteks implementasi yang spesifik, sehingga belum dikaitkan secara eksplisit dengan \textit{Enterprise Architecture Maturity Model} dan belum dievaluasi pada industri.
+
+\section{Kerangka Konseptual}
+Arsitektur \textit{Enterprise} (AE), Tata Kelola AE, dan \textit{Enterprise Architecture Maturity Model} merupakan tiga komponen yang saling berkaitan erat dalam pengelolaan arsitektur perusahaan.
 \begin{enumerate}
-  \item Analisis terkait kondisi nyata praktik \textit{EA Governance} masih sangat minim.
-  \item Penelitian belum berfokus kepada perancangan model perbaikan \textit{EA Governance} yang menyeluruh.
+  \item Arsitektur \textit{Enterprise} Sebagai Fondasi Integrasi Strategi dan Teknologi \\
+  AE berfungsi sebagai kerangka yang mendefinisikan hubungan antara bisnis dan teknologi.
+  AE akan membantu perusahaan mengatur elemen bisnis, aplikasi, data, dan infrastruktur agar dapat menghasilkan keputusan yang strategis \autocite{TOGAF_Standard_10th}. 
+  Selain itu, \textcite{bernard2012introduction} menekankan bahwa AE akan memberikan panduan struktural untuk meningkatkan integrasi proses bisnis dan efisiensi teknologi.
+  \textcite{ross2006enterprise} juga menjelaskan bahwa arsitektur yang terdokumentasi akan membantu perusahaan menurunkan kompleksitas dan mempercepat pengambilan keputusan. 
+  Dengan demikian, AE berperan dalam menyusun artefak arsitektur yang menggambarkan kondisi saat ini dan target perusahaan.\\
+
+  \item Tata Kelola AE Sebagai Pengendali dan Penjamin Konsisten\\
+  Tata kelola AE bertujuan untuk memastikan bahwa implementasi solusi atau teknologi mematuhi standar dan prinsip arsitektur \autocite{TOGAF_Standard_10th}.
+  \textcite{foorthuis2016theory} menegaskan bahwa proses tata kelola seperti \textit{review, compliance} dan standarisasi berpengaruh terhadap keberhasilan AE.
+  Selain itu, \textcite{tamm2011does} menjelaskan bahwa AE tidak muncul hanya karena memiliki kapabilitas yang bagus, akan tetapi AE akan terealisasi ketika memiliki tata kelola secara efektif dengan menerapkan aset kapabilitas tersebut 
+  dalam setiap mengambil suatu keputusan.\\
+
+  \item \textit{Enterprise Architecture Maturity Model} Sebagai Alat Ukur Kapabilitas Arsitektur \\
+  \textit{Enterprise Architecture Maturity Model} merupakan kerangka untuk menilai sejauh mana kapabilitas AE dan tata kelola diterapkan \autocite{jager2023getting}.\\
 \end{enumerate}
+
+Dari tiga komponen yang telah dijelaskan sebelumnya, dapat disimpulkan bahwa adanya keterkaitan fungsional yang erat antar komponen tersebut.
+Gambar \ref{gambar:corr} menunjukkan hubungan antara Arsitektur \textit{Enterprise} (AE), Tata Kelola AE, dan \textit{Enterprise Architecture Maturity Model}.
+\begin{figure}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
+  \centering
+  \captionsetup{justification=centering}
+      \includegraphics[width=1\textwidth]{image/correlation.png}
+  \caption{Hubungan Antar Komponen}
+  \label{gambar:corr}
+\end{figure}
