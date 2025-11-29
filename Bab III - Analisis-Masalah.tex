@@ -8,14 +8,12 @@
 \label{chap:analisis-masalah}
 \section{Gambaran Umum Perusahaan}
 \subsection{Profil Paragon Corp}
-ParagonCorp adalah perusahaan \textit{Fast Moving Consumer Goods} (FMCG) bidang kosmetik di Indonesia yang mengemban tujuan utama menciptakan kebaikan 
-yang lebih besar bagi masyarakat melalui inovasi. Perusahaan ini didukung lebih dari 10.000 karyawan yang mereka sebut 
-paragonian yang tersebar di Indonesia hingga Malaysia. Perusahaan ini terus berinovasi dalam produk, program, dan 
-cara kerja untuk menyebarkan manfaat ke seluruh lapisan masyarakat \autocite{ParagonInnovation}.
+Paragon Corp adalah perusahaan \textit{Fast Moving Consumer Goods} (FMCG) bidang kosmetik di Indonesia yang mengemban tujuan utama menciptakan kebaikan yang lebih besar bagi masyarakat melalui inovasi. 
+Perusahaan ini didukung lebih dari 10.000 karyawan yang mereka sebut paragonian yang tersebar di Indonesia hingga Malaysia. 
+Perusahaan ini terus berinovasi dalam produk, program, dan cara kerja untuk menyebarkan manfaat ke seluruh lapisan masyarakat \autocite{ParagonInnovation}.
 
-ParagonCorp memiliki visi yaitu menjadi perusahaan yang berkomitmen pada tata kelola terbaik dan perbaikan berkelanjutan
-agar lebih baik dari kemarin melalui produk berkualitas tinggi yang memberikan manfaat bagi paragonian, mitra, masyarakat, dan lingkungan.
-Misi ParagonCorp berfokus kepada enam pilar utama yaitu:
+Paragon Corp memiliki visi yaitu menjadi perusahaan yang berkomitmen pada tata kelola terbaik dan perbaikan berkelanjutan agar lebih baik dari kemarin melalui produk berkualitas tinggi yang memberikan manfaat bagi paragonian, mitra, masyarakat, dan lingkungan.
+Misi Paragon Corp berfokus kepada enam pilar utama yaitu:
 \begin{enumerate}
     \item Mengembangkan dan mendidik paragonian yang kompeten dengan keunggulan kompetitif.
     \item Mendengarkan kebutuhan konsumen dan menciptakan produk yang melampaui ekspetasi mereka.
@@ -26,44 +24,47 @@ Misi ParagonCorp berfokus kepada enam pilar utama yaitu:
     \item Memperluas jangkauan produk, layanan, dan area bisnis.
   \end{enumerate}
 
-\subsection{Penerapan EA di Paragon Corp}
-Pertumbuhan pesat pada Direktorat Teknologi Informasi (TI) ParagonCorp menimbulkan tantangan baru yang signifikan. Seiring dengan semakin bertambahnya 
-jumlah aplikasi dan layanan, manajemen mulai kesulitan menentukan arah strategis pengembangan TI, yang berpotensi menyebabkan ketidakselarasan. Kondisi ini kemudian mendorong 
-keputusan untuk membentuk \textit{Enterprise Architecture} (EA) pada bulan Juli 2024.
+\subsection{Penerapan Arsitektur \textit{Enterprise} di Paragon Corp}
+Pertumbuhan pada Direktorat Teknologi Informasi (TI) Paragon Corp menimbulkan banyak tantangan.
+Manajemen mulai kesulitan untuk menentukan arah strategis perusahaan karena bertambahnya aplikasi dan layanan.
+Kondisi ini mendorong untuk membentuk Tim \textit{Enterprise Architecture}.
 
-Pada awal pembentukannya, Paragon Corp menjalin kerja sama dengan konsultan PwC untuk melakukan penilaian komprehensif terhadap kapabilitas EA internal. Hasil penilaian tersebut 
-menunjukkan bahwa tingkat kematangan EA di ParagonCorp berada di angka 1.2 dari skala 5. Skor ini mengindikasikan bahwa perencanaan dan keputusan yang diambil sebelumnya seringkali bersifat reaktif 
-disebabkan oleh ketiadaan data dan dokumentasi terpusat mengenai arsitektur TI yang ada. Akibatnya, tim kesulitan dalam membuat keputusan yang terinformasi dan merumuskan langkah strategis ke depan.
+Pada awal pembentukannya, Paragon Corp menjalin kerja sama dengan konsultan PwC untuk melakukan penilaian terhadap kapabilitas Arsitektur \textit{Enterprise} (AE).
+Hasil penilaian menunjukkan bahwa tingkat \textit{maturity} AE di Paragon Corp berada di level 1. 
+Saat ini, tim masih melakukan pengumpulan data terkait aset Teknologi Informasi (TI) dari berbagai pemangku kepentingan.
+Beriringan dengan tahap ini, akan segera dijalani juga implementasi proses tata kelola AE yag terstruktur untuk memastikan pengembangan TI di Paragon Corp sesuai dengan tujuan yang ditetapkan.
 
-Saat ini, tim masih berada pada fase intensif pengumpulan data berbagai pemangku kepentingan terkait aset TI yang ada. Beriringan dengan tahap ini akan segera dijalankan implementasi \textit{EA Governance} 
-yang terstruktur untuk memastikan pengembangan TI ParagonCorp di masa depan berjalan sesuai dengan panduan dan tujuan yang jelas.
-
-\section{Analisis Kondisi \textit{EA Governance} Saat Ini}
-\subsection{Struktur dan Mekanisme \textit{EA Governance} Saat Ini}
-\textit{EA Governance} di Paragon Corp melibatkan beberapa peran yang bekerja secara lintas fungsi. Secara garis besar, struktur ini terdiri atas \textit{Business Architect, Enterprise Architect, Cloud Infrastructure, IT Security,} dan \textit{Engineering Manager}.
+\section{Analisis Kondisi Tata Kelola Arsitektur \textit{Enterprise} Saat Ini}
+\subsection{Struktur dan Mekanisme Tata Kelola Arsitektur \textit{Enterprise} Saat Ini}
+Tata kelola Arsitektur \textit{Enterprise} (AE) di Paragon Corp melibatkan beberapa peran yang bekerja secara lintas fungsi. 
+Secara garis besar, struktur ini terdiri atas \textit{Business Architect, Enterprise Architect, Cloud Infrastructure, IT Security,} dan \textit{Engineering Manager}.
 \begin{enumerate}
   \item {\textit{Business Architect}} \\
-  \textit{Business Architect} bertanggung jawab dalam menginisiasi perubahan atau inisiatif melalui penyusunan dokumen \textit{User Requirement Specification} (URS), melakukan \textit{EA Impact Analysis}, dan melakukan \textit{architecture impact scoring} terhadap arsitektur bisnis dan aplikasi. \\
+  \textit{Business Architect} bertanggung jawab dalam menginisiasi perubahan atau inisiatif melalui penyusunan dokumen \textit{User Requirement Specification} (URS), melakukan \textit{EA impact analysis}, dan melakukan \textit{architecture impact scoring} terhadap arsitektur. \\
 
   \item {\textit{Enterprise Architect} (EA)} \\
-  \textit{Enterprise Architect} bertindak sebagai konsultan arsitektur yang melakukan pengecekan kelengkapan artefak, memberikan arahan arsitektural, serta memonitor jalannya proyek di setiap fase. \\
+  \textit{Enterprise Architect} bertindak sebagai konsultan arsitektur yang melakukan pengecekan kelengkapan artefak, memberikan arahan arsitektural, dan memonitor jalannya proyek di setiap fase. \\
 
   \item {\textit{Cloud Infrastructure} (CI) dan \textit{IT Security}} \\
-  \textit{Cloud Infrastructure} dan \textit{IT Security} menyusun dan memperbarui artefak terkait infrastruktur dan keamanan, memastikan perubahan sejalan dengan standar keamanan dan kebutuhan infrastruktur yang relevan. \\
+  \textit{Cloud Infrastructure} dan \textit{IT Security} bertugas dalam menyusun dan memperbarui artefak terkait infrastruktur dan keamanan, memastikan perubahan sejalan dengan standar keamanan dan kebutuhan infrastruktur yang relevan. \\
 
   \item {\textit{Engineering Manager} (EM)} \\
-  \textit{Engineering Manager} mereview dokumen URS, memonitor pengembangan aplikasi, serta memastikan seluruh artefak aplikasi dan data terdokumentasi dengan baik. \\
+  \textit{Engineering Manager} berperan dalam mereview dokumen URS, memonitor pengembangan aplikasi, serta memastikan seluruh artefak aplikasi dan data terdokumentasi dengan baik. \\
 \end{enumerate}
 
-Alur \textit{EA Governance} terbagi menjadi lima tahap, dengan detail sebagai berikut:
+Alur tata kelola AE terbagi menjadi lima tahap, dengan detail sebagai berikut:
 \begin{enumerate}
   \item {Tahap \textit{Ideation}} \\
-  Tahap \textit{ideation} dimulai ketika muncul kebutuhan perubahan atau pengembangan sistem, biasanya diinisiasi oleh bisnis atau dapat juga dari IT. Inisiatif ini ditindaklanjuti dengan penyusunan dokumen \textit{User Requirement Specification} (URS) oleh \textit{Business Architect}. 
-  Langkah berikutnya, \textit{Business Architect} melakukan \textit{architecture impact scoring} untuk mengidentifikasi seberapa besar pengaruh perubahan tersebut terhadap arsitektur bisnis dan aplikasi. Penilaian ini dikategorikan menjadi dua yaitu \textit{high impact} dan \textit{low impact}.
+  Tahap \textit{ideation} dimulai ketika muncul kebutuhan perubahan atau pengembangan sistem, biasanya diinisiasi oleh tim bisnis. 
+  Inisiatif ini ditindaklanjuti dengan penyusunan dokumen \textit{User Requirement Specification} (URS) oleh \textit{Business Architect}. 
+  Langkah berikutnya, \textit{Business Architect} melakukan \textit{architecture impact scoring} untuk mengidentifikasi seberapa besar pengaruh perubahan tersebut terhadap arsitektur bisnis dan aplikasi. 
+  Penilaian ini dikategorikan menjadi dua yaitu \textit{high impact} dan \textit{low impact}.
   \textit{High impact} dikategorikan jika perubahannya besar seperti modifikasi proses bisnis utama, pergantian sistem, atau perubahan integrasi kritikal, sedangkan \textit{low impact} dikategorikan jika perubahannya minor seperti modifikasi fitur kecil atau tampilan. \\
 
-  \textit{Business Architect} kemudian mendokumentasikan artefak bisnis seperti \textit{business process flow} dan \textit{user flow diagram} pada \textit{platform} SAP LeanIX. Informasi yang dimasukkan di URS dan SAP LeanIX berupa \textit{current state} dan \textit{desired state} seaat perubahan diimplementasikan.
-  Semua \textit{progress} dipantau melalui excel \textit{tracker} untuk memastikan ketercapaian setiap aktivitas pada tahapan \textit{ideation}. Tahap \textit{ideation} ini memastikan seluruh rencana perubahan telah tervalidasi sejak awal sebelum masuk ke tahap \textit{risk and impact}. 
+  \textit{Business Architect} kemudian mendokumentasikan artefak bisnis seperti \textit{business process flow} dan \textit{user flow diagram} pada \textit{platform} SAP LeanIX. 
+  Informasi yang dimasukkan di URS dan SAP LeanIX berupa \textit{current state} dan \textit{desired state} seaat perubahan diimplementasikan.
+  Semua progres dipantau melalui excel \textit{tracker} untuk memastikan ketercapaian setiap aktivitas pada tahapan \textit{ideation}. 
+  Tahap \textit{ideation} ini memastikan seluruh rencana perubahan telah tervalidasi sejak awal sebelum masuk ke tahap \textit{risk and impact}. 
   Gambar \ref{gambar:asis_ideation} menunjukkan tahapan \textit{ideation} saat ini.\\
   \begin{figure}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
     \centering
@@ -74,11 +75,14 @@ Alur \textit{EA Governance} terbagi menjadi lima tahap, dengan detail sebagai be
   \end{figure}
 
   \item {Tahap \textit{Risk and Impact}} \\
-  Tahap \textit{risk and impact} berfokus pada pengkajian risiko dan dampak yang muncul dari rencana perubahan sistem. Setelah dokumen URS selesai diinisiasi pada tahap \textit{ideation}, dokumen tersebut akan dikirim oleh \textit{Business Architect} kepada \textit{Engineering Manager} untuk dilakukan \textit {review}.
-  \textit{Engineering Manager} diberikan waktu maksimal 7 hari untuk memeriksa URS yang telah dibagikan. Hasil \textit{review} tersebut disampaikan kembali kepada \textit{Business Architect} melalui grup Microsoft Teams. Jika diperlukan, diskusi tambahan terkait detail kebutuhan juga dapat dilakukan antara \textit{Business Architect} dan \textit{Engineering Manager}. \\
+  Tahap \textit{risk and impact} berfokus kepada analisis dampak yang muncul dari rencana perubahan sistem. 
+  Setelah dokumen URS selesai diinisiasi pada tahap \textit{ideation}, dokumen tersebut akan dikirim oleh \textit{Business Architect} kepada \textit{Engineering Manager} untuk dilakukan \textit {review}.
+  \textit{Engineering Manager} diberikan waktu maksimal 7 hari untuk memeriksa URS yang telah dibagikan. 
+  Hasil \textit{review} tersebut disampaikan kembali kepada \textit{Business Architect} melalui grup Microsoft Teams. \\
 
-  Setelah proses \textit{review}, \textit{Engineering Manager} memulai pembuatan artefak arsitektur aplikasi dan data. Kegiatan ini berjalan secara paralel dengan langkah \textit{Cloud Infrastructure} dan \textit{IT Security} dalam membuat rancangan awal (\textit{draft}) arsitektur infrastruktur dan keamanan. 
-  Tahapan \textit{Risk and Impact}  bertujuan agar semua risiko potensial serta dampak perubahan dapat teridentifikasi dan dianalisis sebelum memasuki tahap \textit{development}. 
+  Setelah proses \textit{review}, \textit{Engineering Manager} memulai pembuatan artefak arsitektur aplikasi dan data pada \textit{platform} SAP LeanIX.. 
+  Kegiatan ini berjalan secara paralel dengan langkah \textit{Cloud Infrastructure} dan \textit{IT Security} dalam membuat rancangan awal (\textit{draft}) arsitektur infrastruktur dan keamanan pada \textit{platform} SAP LeanIX.. 
+  Tahapan \textit{Risk and Impact} bertujuan agar semua risiko potensial serta dampak perubahan dapat teridentifikasi dan dianalisis sebelum memasuki tahap \textit{development}. 
   Gambar \ref{gambar:asis_riskImpact} menunjukkan tahapan \textit{risk and impact} saat ini.\\
   \begin{figure}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
     \centering
@@ -89,12 +93,16 @@ Alur \textit{EA Governance} terbagi menjadi lima tahap, dengan detail sebagai be
   \end{figure}
 
   \item {Tahap \textit{Development}} \\
-  Tahap \textit{development} berfokus dalam aktivitas pengembangan kode dimulai berdasarkan \textit{task} yang telah diberikan oleh \textit{Engineering Manager} kepada \textit{software engineering}. Tahapan \textit{development} diatur berdasarkan hasil \textit{assessment} pada tahap-tahap sebelumnya, khususnya keputusan terkait dampak perubahan (\textit{high impact} atau \textit{minimum impact}).
-  Jika sebuah inisiatif bernilai \textit{high impact}, maka \textit{Business Architect} akan melakukan \textit{EA Project Monitoring} untuk fase \textit{development} dan meneruskan \textit{drafting} atau penyempurnaan artefak bisnis. \textit{Enterprise Architect} akan menyediakan konsultasi terkait arsitektur, 
-  memastikan rancangan serta implementasi tetap sejalan dengan standar dan aturan EA perusahaan. \textit{Cloud Infrastructure} dan \textit{IT Security} meneruskan \textit{drafting} penyempurnaan artefak infrastruktur dan keamanan. Selain itu \textit{Engineering Manager}  meneruskan \textit{drafting} penyempurnaan artefak aplikasi dan data. Pada fokus \textit{minimum impact}, pembaruan artefak
-  dilakukan tanpa konsultas dengan EA dan tanpa melakukan \textit{EA Project Monitoring}.\\
+  Tahap \textit{development} berfokus dalam aktivitas pengembangan kode dimulai berdasarkan \textit{task} yang telah diberikan oleh \textit{Engineering Manager} kepada \textit{software engineering}. 
+  Tahapan \textit{development} diatur berdasarkan hasil penilaian pada dokumen URS, khususnya keputusan terkait dampak perubahan (\textit{high impact} atau \textit{minimum impact}).
+  Jika sebuah inisiatif bernilai \textit{high impact}, maka \textit{Business Architect} akan melakukan \textit{EA Project Monitoring} untuk fase \textit{development} dan melanjutkan artefak bisnis. 
+  \textit{Enterprise Architect} akan menyediakan konsultasi terkait arsitektur, memastikan rancangan serta implementasi tetap sejalan dengan standar dan aturan AE perusahaan. 
+  \textit{Cloud Infrastructure} dan \textit{IT Security} melanjutkan artefak infrastruktur dan keamanan. 
+  Selain itu \textit{Engineering Manager}  melanjutkan artefak aplikasi dan data. 
+  Pada \textit{minimum impact}, pembaruan artefak dilakukan tanpa konsultasi dengan \textit{Enterprise Architect} dan tanpa melakukan \textit{EA Project Monitoring}.\\
 
-  Selama proses \textit {development}, pembaruan artefak dapat dilakukan secara paralel sesuai kebutuhan. Sebelum transisi ke tahap \textit{IAT and Go-Live}, EA akan melakukan \textit{review} kelengkapan \textit{EA Project Monitoring} serta memastikan seluruh \textit{checklist} terpenuhi. 
+  Selama proses \textit {development}, pembaruan artefak dapat dilakukan secara paralel sesuai kebutuhan. 
+  Sebelum transisi ke tahap \textit{UAT and Go-Live}, \textit{Enterprise Architect} akan melakukan \textit{review} kelengkapan \textit{EA Project Monitoring} serta memastikan seluruh \textit{checklist} terpenuhi. 
   Gambar \ref{gambar:asis_dev} menunjukkan tahapan \textit{development} saat ini.\\
   \begin{figure}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
     \centering
@@ -105,12 +113,16 @@ Alur \textit{EA Governance} terbagi menjadi lima tahap, dengan detail sebagai be
   \end{figure}
 
   \item {Tahap \textit{UAT and Go-Live}} \\
-  Tahap \textit{UAT and Go-Live} merupakan fase validasi akhir dan peluncuran sistem yang telah dikembangkan. Prosesnya diawali dengan identifikasi kembali status \textit{high impact} atau \textit{minimum impact} atas perubahan yang akan diterapkan. Jika perubahan dikategorikan \textit{high impact}, dilakukan \textit{EA Project Monitoring} untuk fase \textit{UAT and Go-Live}. EA memastikan 
-  seluruh \textit{checklist} sudah lengkap sebelum dinyatakan siap diproduksi, sedangkan untuk \textit{minimum impact}, proses \textit{EA Project Monitoring} tidak dilakukan. \\
+  Tahap \textit{UAT and Go-Live} merupakan fase validasi akhir dan peluncuran sistem yang telah dikembangkan. 
+  Prosesnya diawali dengan identifikasi kembali status \textit{high impact} atau \textit{minimum impact} atas perubahan yang akan diterapkan. 
+  Jika perubahan dikategorikan \textit{high impact}, dilakukan \textit{EA Project Monitoring} untuk fase \textit{UAT and Go-Live}. 
+  \textit{Enterprise Architect} memastikan seluruh \textit{checklist} sudah lengkap sebelum dinyatakan siap diproduksi.
+  Sementara itu, untuk \textit{minimum impact}, proses \textit{EA Project Monitoring} tidak dilakukan. \\
 
-  Pada tahap ini, seluruh artefak arsitektur (bisnis, aplikasi, data, infrastruktur, keamanan) harus difinalisasi sebelum sistem masuk ke produksi. Setelah artefak final, maka dilanjutkan pengecekan penyelesaian artefak saat \textit{Change Advisory Board} (CAB) jika perubahan bersifat \textit{high impact}, sedangkan artefak akan di cek saat \textit{Bi-weekly Architecture Change Review}
-  jika perubahannya bersifat \textit{minimum impact}. Setelah seluruh proses verifikasi dilalui dan artefak dinyatakan lengkap, status perubahan yang \textit{minimum impact} akan ditandai "\textit{complete}" di \textit{tracker}, sedangkan untuk \textit{high impact} diterima dalam \textit{Request for Change} (RFC) yang kemudian dapat dilanjutkan ke produksi. 
-  Gambar \ref{gambar:asis_UAT} menunjukkan tahapan \textit{development} saat ini.\\
+  Pada tahap ini, seluruh artefak arsitektur (bisnis, aplikasi, data, infrastruktur, keamanan) harus difinalisasi sebelum sistem masuk ke produksi. 
+  Setelah artefak final, maka dilanjutkan pengecekan penyelesaian artefak saat \textit{Change Advisory Board} (CAB) jika perubahan bersifat \textit{high impact}, sedangkan artefak akan di cek saat \textit{Bi-weekly Architecture Change Review} jika perubahannya bersifat \textit{minimum impact}. 
+  Setelah seluruh proses verifikasi dilalui dan artefak dinyatakan lengkap, status perubahan yang \textit{minimum impact} akan ditandai "\textit{complete}" pada \textit{tracker}, sedangkan untuk \textit{high impact} diterima dalam \textit{Request for Change} (RFC) yang kemudian dapat dilanjutkan ke produksi. 
+  Gambar \ref{gambar:asis_UAT} menunjukkan tahapan \textit{UAT and Go-Live} saat ini.\\
   \begin{figure}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
     \centering
     \captionsetup{justification=centering}
@@ -120,9 +132,13 @@ Alur \textit{EA Governance} terbagi menjadi lima tahap, dengan detail sebagai be
   \end{figure}
 
   \item {Tahap \textit{Hypercare}} \\
-  Tahap \textit{hypercare} adalah fase akhir dalam \textit{governance} setelah sistem dinyatakan berhasil \textit{Go Live}. Fase ini berfungsi sebagai masa pengawasan dan pendampingan operasional untuk memastikan bahwa hasil perubahan bisa berjalan stabil, tidak ada gangguan kritis, dan seluruh dokumentasi arsitektural telah lengkap. Tahapan \textit{hypercare} diawali identifikasi kembali status \textit{high impact} atau \textit{minimum impact} atas perubahan yang akan diterapkan.
-  Jika \textit{minimum impact}, proyek dapat langsung ditutup (\textit{closing project}) setelah konfirmasi stabilitas sistem dan kelengkapan artefak. Jika \textit{high impact}, dilakukan \textit{EA Project Monitoring} untuk fase \textit{hypercare}. \textit{Enterprise Architect} memastikan seluruh \textit{checklist} sudah lengkap sebelum \textit{closing project}. 
-  Selain itu, \textit{Enterprise Architect} memberikan konsultasi arsitektural selama periode \textit{hypercare} untuk membantu pemantauan sistem, \textit{monitoring} performa layanan, serta verifikasi artefak. 
+  Tahap \textit{hypercare} adalah fase akhir setelah sistem dinyatakan berhasil \textit{Go Live}. 
+  Fase ini berfungsi sebagai masa pengawasan dan pendampingan operasional untuk memastikan bahwa hasil perubahan bisa berjalan stabil, tidak ada gangguan kritis, dan seluruh dokumentasi arsitektural telah lengkap. 
+  Tahapan \textit{hypercare} diawali identifikasi kembali status \textit{high impact} atau \textit{minimum impact} atas perubahan yang akan diterapkan.
+  Jika \textit{minimum impact}, proyek dapat langsung ditutup (\textit{closing project}) setelah konfirmasi stabilitas sistem dan kelengkapan artefak. 
+  Jika \textit{high impact}, dilakukan \textit{EA Project Monitoring} untuk fase \textit{hypercare}. 
+  \textit{Enterprise Architect} akan memastikan seluruh \textit{checklist} sudah lengkap sebelum \textit{closing project}. 
+  Selain itu, \textit{Enterprise Architect} memberikan konsultasi arsitektural selama periode \textit{hypercare} untuk membantu verifikasi artefak. 
   Gambar \ref{gambar:asis_hypercare} menunjukkan tahapan \textit{hypercare} saat ini.\\
   \begin{figure}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
     \centering
@@ -134,44 +150,66 @@ Alur \textit{EA Governance} terbagi menjadi lima tahap, dengan detail sebagai be
 \end{enumerate}
 
 \subsection{Pemanfaatan SAP LeanIX}
-SAP LeanIX berperan penting sebagai \textit{platform} utama dalam mendukung proses \textit{EA Governance} di Paragon Corp. Semua artefak arsitektur hingga kondisi saat ini (\textit{current state}) dan kondisi yang diharapkan (\textit{desired state}) dicatat dan dikelola secara terpusat di SAP LeanIX.
-\textit{Platform} ini memungkinkan seluruh tim yang terlibat dalam proses \textit{EA Governance} untuk mengakses dan memperbarui dokumentasi secara kolaboratif.
+SAP LeanIX berperan penting sebagai \textit{platform} utama dalam mendukung proses tata kelola AE di Paragon Corp. 
+Semua artefak arsitektur kondisi saat ini (\textit{current state}) dan kondisi yang diharapkan (\textit{desired state}) dicatat dan dikelola secara terpusat di SAP LeanIX.
+\textit{Platform} ini memungkinkan seluruh tim yang terlibat dalam proses tata kelola AE dapat mengakses dan memperbarui dokumentasi secara kolaboratif.
 
 \subsection{Permasalahan yang Ditemukan}
-Pelaksanaan \textit{EA Governance} di Paragon Corp masih menghadapi berbagai tantangan. Permasalahan tersebut dapat dikategorikan sebagai berikut:
+Setelah melakukan wawancara dengan Tim \textit{Enterprise Architect} Paragon Corp, pelaksanaan tata kelola AE di Paragon Corp masih menghadapi berbagai tantangan. 
+Permasalahan tersebut dapat dikategorikan sebagai berikut:
 \begin{enumerate}
   \item Keterbatasan Sumber Daya Manusia dan Beban Kerja \\
-  Keterbatasan sumber daya manusia pada tim \textit{Cloud Infrastructure} dan \textit{IT Security} menyebabkan pembaruan dan dokumentasi artefak arsitektur belum dapat dilakukan secara optimal. Pada proses saat ini artefak infrastruktur dan keamanan hanya diperbarui di SAP LeanIX dan tidak tercatat secara formal dalam dokumen URS. Disisi lain, \textit{Business Architect} juga memiliki beban kerja yang tinggi
-  yang menyebabkan keterbatasan waktu dalam mengambil peran pada proses \textit{EA Governance} \\
+  Keterbatasan sumber daya manusia pada tim \textit{Cloud Infrastructure} dan \textit{IT Security} menyebabkan pembaruan dan dokumentasi artefak arsitektur belum dapat dilakukan secara optimal. 
+  Pada proses saat ini artefak infrastruktur dan keamanan hanya diperbarui di SAP LeanIX dan tidak tercatat secara formal dalam dokumen URS. 
+  Disisi lain, \textit{Business Architect} juga memiliki beban kerja yang tinggi yang menyebabkan keterbatasan waktu dalam mengambil peran pada proses tata kelola AE. \\
 
   \item Rendahnya Kesadaran Pentingnya Dokumentasi \\
-  Kesadaran terhadap pentingnya dokumentasi pada artefak arsitektur belum sepenuhnya tertanam di seluruh anggota tim. Dokumentasi sering dianggap sekadar formalitas atau beban administratif, bukan sebagai kebutuhan strategis untuk pengelolaan dan pengendalian arsitektur perusahaan ke depan.
-  Hal ini berdampak pada kurangnya kedisiplinan dalam memperbarui dan melengkapi seluruh artefak EA secara berkala.\\
+  Kesadaran terhadap pentingnya dokumentasi pada artefak arsitektur belum sepenuhnya tertanam di seluruh anggota tim. 
+  Dokumentasi sering dianggap sekadar formalitas atau beban administratif, bukan sebagai kebutuhan strategis untuk pengelolaan dan pengendalian arsitektur perusahaan ke depan.
+  Hal ini berdampak pada kurangnya kedisiplinan dalam memperbarui dan melengkapi seluruh artefak AE secara berkala.\\
 
   \item Ketidakjelasan Proses Konsultasi ke \textit{Enterprise Architect} \\
-  Saat ini belum ada parameter atau standar yang jelas mengenai aspek apa saja yang harus dikonsultasikan ke \textit{Enterprise Architect}. Proses konsultasi sering dilakukan secara informal, tanpa aturan baku yang mengikat. Di samping itu, Paragon Corp juga belum membentuk forum formal seperti \textit{Architecture Review Board} (ARB), sehingga pengambilan keputusan strategis terkait arsitektur masih kurang terstruktur dan kurang terpantau oleh lintas divisi. \\
+  Saat ini belum ada parameter atau standar yang jelas mengenai aspek apa saja yang harus dikonsultasikan ke \textit{Enterprise Architect}. 
+  Proses konsultasi sering dilakukan secara informal, tanpa aturan baku yang mengikat. 
+  Di samping itu, Paragon Corp juga belum membentuk forum formal seperti \textit{Architecture Review Board} (ARB), sehingga pengambilan keputusan strategis terkait arsitektur masih kurang terstruktur dan kurang terpantau oleh lintas divisi. \\
 
-  \item \textit{EA Impact Analysis} yang Belum Menyeluruh \\
-  \textit{EA Impact Analysis} pada domain infrastruktur dan keamanan belum dilakukan secara komprehensif sejak awal. Saat ini \textit{impact analysis} untuk kedua domain ini baru diperbarui atau di-(\textit{input}) ke SAP LeanIX setelah perubahan terlaksana. Hal ini membuka celah risiko operasional dan dapat menurunkan kualitas tata kelola arsitektur. \\
+  \item \textit{EA Impact Analysis} yang Belum Sesuai dengan Standar \\
+  \textit{EA impact analysis} pada domain infrastruktur dan keamanan belum dilakukan secara komprehensif sejak awal. 
+  Saat ini \textit{impact analysis} untuk kedua domain ini baru diperbarui atau di-(\textit{input}) ke SAP LeanIX setelah perubahan terlaksana. 
+  Selain itu, \textit{impact analysis} untuk kedua domain ini tidak tercatat di dokumen URS, melainkan di SAP LeanIX saja.
+  Hal ini membuka celah risiko operasional dan dapat menurunkan kualitas tata kelola arsitektur. \\
+
+  Tim \textit{Enterprise Architect} juga menekankan masih perlu analisis untuk lima domain AE terkait \textit{EA impact analysis} ini.
+  Hal ini dikarenakan prosedur untuk melakukan \textit{impact analysis} masih belum terdefinisi dengan jelas.\\
 
   \item Tantangan Budaya Organisasi \\
-  Budaya “tidak ada paksaan” dalam organisasi menjadi tantangan tersendiri untuk menciptakan disiplin dan konsistensi dalam dokumentasi. Program-program seperti penetapan \textit{Objective Key Results} (OKR) di direktorat IT telah diimplementasikan untuk mendorong kebiasaan mendokumentasi, namun efektivitasnya sangat bergantung pada komitmen pribadi masing-masing anggota, bukan pada sistem kontrol formal dari manajemen. \\
+  Budaya “tidak ada paksaan” dalam organisasi menjadi tantangan tersendiri untuk menciptakan disiplin dan konsistensi dalam dokumentasi. 
+  Program-program seperti penetapan \textit{Objective Key Results} (OKR) di Direktorat Teknologi Informasi (TI) telah diimplementasikan untuk mendorong kebiasaan mendokumentasi, namun efektivitasnya sangat bergantung pada komitmen pribadi masing-masing anggota, bukan pada sistem kontrol formal dari manajemen. \\
 \end{enumerate}
 
-\section{Analisis \textit{Gap} terhadap \textit{EA Best Practice}}
-\subsection{Perbandingan dan Evaluasi Tingkat Kematangan EA}
-Evaluasi tingkat kematangan arsitektur perusahaan dilakukan dengan membandingkan kondisi \textit{EA Governance} saat ini di Paragon Corp dengan standar EAMM yang diadopsi dari TOGAF (mengacu ke Tabel \ref{tbl:EAMM}). 
-Penilaian dimulai dengan menguraikan karakteristik tiap level pada masing-masing dimensi, khususnya pada target level 3 (\textit{Defined}), lalu mengidentifikasi posisi aktual Paragon Corp.
-Tabel \ref{tbl:Level3EAMM} menunjukkan hasil evaluasi antara kondisi aktual terhadap indikator level 3 (\textit{Defined}).
+\section{Analisis \textit{Gap} terhadap \textit{EA Maturity} Level 3 \textit{Defined}}
+% \subsection{Perbandingan dan Evaluasi Tingkat Kematangan AE}
+% Setelah wawancara dengan Tim \textit{Enterprise Architect}, penilaian terakhir terkait \textit{EA maturity} Paragon Corp berada di level 2.
+% Evaluasi tingkat \textit{EA maturity} dilakukan dengan membandingkan kondisi AE saat ini di Paragon Corp dengan standar EAMM yang diadopsi dari TOGAF (mengacu ke Tabel \ref{tbl:EAMM}). 
+% Penilaian dimulai dengan menguraikan karakteristik tiap level pada masing-masing dimensi, khususnya pada target level 3 (\textit{Defined}), lalu mengidentifikasi \textit{gap} yang didapatkan.
+% Tabel \ref{tbl:Level3EAMM} menunjukkan hasil evaluasi antara kondisi aktual terhadap indikator level 3 (\textit{Defined}).
 
-\input{table/tabelDimensiL3.tex}
+% \input{table/tabelDimensiL3.tex}
 
-\subsection{\textit{Gap Analysis}}
-Berdasarkan permasalahan yang telah diidentifikasi sebelumnya, dilakukan \textit{gap analysis} dengan membandingkan kondisi \textit{EA Governance} saat ini Paragon Corp terhadap indikator \textit{best practice} pada level 3 (\textit{Defined}) dalam TOGAF EAMM. 
-Setiap dimensi dievaluasi untuk mengidentifikasi aspek mana saja yang belum sesuai standar, sekaligus mencari faktor penyebab serta contoh konkret dari kesenjangan tersebut.
-Tabel \ref{tbl:GapEAMM} menunjukkan hasil \textit{gap} dan akar masalah \textit{EA Governance} Paragon Corp.
+% \subsection{Analisis \textit{Gap}}
+% Berdasarkan permasalahan yang telah diidentifikasi sebelumnya, dilakukan analisis \textit{gap} dengan membandingkan kondisi tata kelola AE saat ini Paragon Corp terhadap indikator pada level 3 (\textit{Defined}) dalam TOGAF EAMM. 
+% Setiap dimensi dievaluasi untuk mengidentifikasi aspek mana saja yang belum sesuai standar, sekaligus mencari faktor penyebab serta contoh konkret dari kesenjangan tersebut.
+% Tabel \ref{tbl:GapEAMM} menunjukkan hasil \textit{gap} dan akar masalah \textit{EA Governance} Paragon Corp.
 
-\input{table/tabelGapEAMM.tex}
+% \input{table/tabelGapEAMM.tex}
+Setelah wawancara dengan Tim \textit{Enterprise Architect} Paragon Corp, penilaian terakhir terkait \textit{EA maturity} Paragon Corp berada di level 2.
+Evaluasi tingkat \textit{EA maturity} dilakukan dengan membandingkan kondisi AE saat ini di Paragon Corp dengan standar EAMM yang diadopsi dari TOGAF (mengacu ke Tabel \ref{tbl:EAMM}). 
+Penilaian dimulai dengan menguraikan karakteristik tiap level pada masing-masing dimensi, khususnya pada target level 3 (\textit{Defined}), lalu mengidentifikasi \textit{gap} yang didapatkan.
+Pada Tabel \ref{tbl:GapEA} menunjukkan hasil analisis \textit{gap}.
+
+\begin{landscape}
+\input{table/tabelGapEA.tex}
+\end{landscape}
 
 \section{Analisis Kebutuhan Perbaikan \textit{EA Governance}}
 Berdasarkan hasil identifikasi masalah dan \textit{gap analysis} dalam implementasi \textit{EA Governance} di Paragon Corp, terdapat sejumlah kebutuhan mendesak yang harus diperbaiki agar tata kelola arsitektur dapat berjalan lebih efektif dan konsisten.
