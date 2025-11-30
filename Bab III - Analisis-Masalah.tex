@@ -187,6 +187,10 @@ Permasalahan tersebut dapat dikategorikan sebagai berikut:
   Program-program seperti penetapan \textit{Objective Key Results} (OKR) di Direktorat Teknologi Informasi (TI) telah diimplementasikan untuk mendorong kebiasaan mendokumentasi, namun efektivitasnya sangat bergantung pada komitmen pribadi masing-masing anggota, bukan pada sistem kontrol formal dari manajemen. \\
 \end{enumerate}
 
+Permasalahan yang akan diselesaikan dalam tugas akhir ini yaitu pelaksanaan \textit{EA impact analysis} yang belum sesuai dengan tata kelola yang diharapkan.
+Permasalahan ini dipilih karena Tim \textit{Enterprise Architect} Paragon Corp menilai bahwa prosedur \textit{EA impact analysis} yang ada saat ini masih belum jelas.
+Oleh karena itu, pada Bab IV akan dibahas rancangan solusi untuk memperbaiki proses \textit{EA impact analysis} dengan standar yang diharapkan organisasi.
+
 \section{Analisis \textit{Gap} terhadap \textit{EA Maturity} Level 3 \textit{Defined}}
 % \subsection{Perbandingan dan Evaluasi Tingkat Kematangan AE}
 % Setelah wawancara dengan Tim \textit{Enterprise Architect}, penilaian terakhir terkait \textit{EA maturity} Paragon Corp berada di level 2.
@@ -211,8 +215,8 @@ Pada Tabel \ref{tbl:GapEA} menunjukkan hasil analisis \textit{gap}.
 \input{table/tabelGapEA.tex}
 \end{landscape}
 
-\section{Analisis Kebutuhan Perbaikan \textit{EA Governance}}
-Berdasarkan hasil identifikasi masalah dan \textit{gap analysis} dalam implementasi \textit{EA Governance} di Paragon Corp, terdapat sejumlah kebutuhan mendesak yang harus diperbaiki agar tata kelola arsitektur dapat berjalan lebih efektif dan konsisten.
+\section{Analisis Kebutuhan Perbaikan Tata Kelola Arsitektur \textit{Enterprise}}
+Berdasarkan hasil identifikasi masalah dan analisis \textit{gap} dalam implementasi tata kelola AE di Paragon Corp, terdapat sejumlah kebutuhan mendesak yang harus diperbaiki agar tata kelola arsitektur dapat berjalan lebih efektif dan konsisten.
 \begin{enumerate}
   \item Konsistensi Proses Konsultasi dan \textit{Review} EA \\
   Penegasan kebijakan diperlukan pada setiap proyek, baik itu \textit{high impact} maupun \textit{minimum impact} tetap melewati tahap konsultasi dan \textit{review} oleh tim EA. 
@@ -238,36 +242,58 @@ Berdasarkan hasil identifikasi masalah dan \textit{gap analysis} dalam implement
 
 \section{Analisis Pemilihan Solusi}
 \subsection{Alternatif Solusi}
-Dalam upaya memperbaiki \textit{EA Governance} Paragon Corp, terdapat tiga pilihan solusi yang dapat dipertimbangkan agar pengelolaan perubahan dan inisiatif digital berjalan lebih terarah serta efektif.
+Berdasarkan permasalahan yang akan diselesaikan, yaitu pelaksanaan \textit{EA impact analysis} yang belum memiliki tata kelola yang jelas.
+Bagian ini merumuskan tiga alternatif solusi yang dapat diterapkan oleh Paragon Corp. 
+Ketiga alternatif ini dirancang setara sehingga depat dibandingkan melalui analisis keputusan pada bagian berikutnya.
 \begin{enumerate}
-  \item \textit{EA Governance} Berbasis PMBOK dan TOGAF \\
-  Alternatif solusi berbasis PMBOK dan TOGAF merupakan solusi yang mengintegrasikan kedua konsep kerangka kerja tersebut.
-  Dalam kerangka kerja PMBOK menyediakan alur manajemen proyek yang dimulai dari\textit{initiating, planning, executing, monitoring and controlling,} dan \textit{closing}.
-  Sementara itu, TOGAF menyediakan tata kelola EA dalam siklus \textit{Architecture Development Method} (ADM).
-  Penggabungan kedua framework ini akan menghasilkan alur dan memastikan kesesuaian proyek dengan teknologi informasi dan bisnis. \\
+  \item Penyusunan SOP \textit{EA Impact Analysis} Terstandarisasi yang Didukung SAP LeanIX \\
+  Penyusunan SOP \textit{EA impact analysis} mengacu pada kerangka kerja TOGAF sebagai referensi.
+  TOGAF dipilih karena memberikan panduan mengenai langkah-langkah analisis arsitektur, termasuk bagaimana menilai dampak terhadap \textit{domain} bisnis, data, aplikasi, infrastruktur, dan keamanan.
+  Selain itu, perusahaan akan memiliki dasar atau panduan yang kuat dalam menjalankan proses \textit{EA impact analysis} karena prosesnya tidak lagi bergantung pada interpretasi setiap tim.
+  SOP ini juga memastikan seluruh aktivitas atau proses analisis memiliki urutan yang jelas.\\
+ 
+  Dalam penerapan solusi ini, SOP akan didukung oleh \textit{platform} SAP LeanIX untuk mengisi dan menyimpan hasil analisis.
+  SAP LeanIX sudah digunakan oleh Paragon Corp sebagai repositori AE sehingga integrasi dengan SOP akan memastikan semua analisis terdokumentasi di satu tempat yang dapat diakses semua tim terkait.
+  Dokumentasi hasil analisis tidak lagi tersebar atau berbeda-beda formatnya karena seluruh tim mengisi pada \textit{platform} yang sama.
+  Selain itu, SAP LeanIX juga menyediakan katalog arsitektur dan relasi antar domain sehingga proses menjadi lebih efisien.\\
+  
+  Solusi ini menekankan konsistensi, kejelasan, dan keseragaman dalam pelaksanaan \textit{EA impact analysis}. 
+  Solusi ini juga mengatasi masalah utama yaitu belum adanya prosedur formal yang diikuti dan adanya perbedaan cara pelaksanaan antar tim.
+  Oleh karena itu, SOP ini akan berperan menjadi pedoman dan SAP LeanIX akan berperan dalam menjaga dokumentasi.
+  Tabel \ref{tbl:alt1} menunjukkan kelebihan dan kekurangan solusi ini. \\
+  \input{table/tabelAlt1.tex}
 
-  Kelebihan dari solosi ini yaitu memberikan kerangka kerja yang menyeluruh untuk organisasi dan akuntabilitas dalam tata kelola EA.
-  Namun kekurangannya berupa kompleksitas tinggi karena membutuhkan pelatihan dan penyesuaian budaya kerja yang besar agar tata kelola EA efektif.
-  Selain itu, dalam praktiknya akan membutuhkan waktu dan sumber daya yang tinggi. \\
+  \item Penerapan \textit{Checklist} dan \textit{Template EA Impact Analysis} \\
+  Penyusunan \textit{checklist} digunakan setiap ada inisiatif atau perubahan yang dapat mempengaruhi arsitektur.
+  \textit{Checklist} ini disusun untuk memastikan bahwa setiap aspek penting dalam arsitektur diperiksa.
+  Aspek yang diperiksa seperti dampak terhadap proses bisnis, aplikasi terkait, data yang digunakan, potensi risiko keamanan, kesiapan infrastruktur, dan dependensi yang perlu diperhatikan.
+  Dengan solusi ini, tim tidak perlu menafsirkan sendiri apa saja yang harus dianalisis sehingga kualitas analisis dapat lebih konsisten.\\
 
-  \item \textit{EA Governance} Berbasis COBIT \\
-  Solusi kedua menekankan penggunaan kerangka kerja COBIT untuk memastikan kontrol, audit, evaluasi, dan manajemen risiko pada seluruh aktivitas TI perusahaan.
-  Dalam tata kelola EA, COBIT menawarkan struktur tata kelola yang komprehensif meliputi penetapan peran, pengelolaan risiko, penjaminan kepatuhan, dan evaluasi kinerja proses arsitektur.
-  COBIT juga menyediakan \textit{domains}, proses, dan indikator \textit{maturity}, yang menjadikan \textit{framework} ini relevan digunakan oleh perusahaan yang menargetkan tata kelola EA terukur, \textit{scalable}, dan terstandarisasi di level organisasi. \\
+  Selain \textit{checklist}, \textit{template EA impact analysis} disediakan untuk mendokumentasikan hasil analisis.
+  \textit{Template} ini memastikan laporan mudah dibaca dan dapat ditinjau oleh Tim \textit{Enterprise Architect}.
+  \textit{Template} dapat memuat bagian-bagian seperti ringkasan inisiatif, \textit{domain} terdampak dan risiko yang ditemukan.\\
 
-  Kelebihan COBIT adalah pendalaman aspek kontrol, audit, kepatuhan, dan pengelolaan risiko sehingga cocok untuk meningkatkan efisiensi tata kelola dan pengawasan kepatuhan. 
-  Namun, kekurangannya terletak pada fleksibilitas yang lebih rendah dalam menghadapi dinamika bisnis yang cepat, dan kurang mendalam di aspek pengembangan EA dibanding TOGAF, \\
+  Pendekatan solusi ini dapat diterapkan dengan cepat tanpa memerlukan perubahan besar pada struktur organisasi atau alur proses.
+  Solusi ini cocok diterapkan ketika organisasi membutuhkan perbaikan yang cepat, mudah diadopsi, dan tidak membebani tim.
+  Selain itu, solusi ini mendukung tim yang mungkin belum terbiasa melakukan analisis arsitektur secara menyeluruh, sehingga mereka tetap memiliki panduan jelas dalam melakukan pekerjaan.
+  Tabel \ref{tbl:alt2} menunjukkan kelebihan dan kekurangan solusi ini. \\
+  \input{table/tabelAlt2.tex}
 
-  \item \textit{EA Governance} Berbasis ITIL \\
-  Solusi ketiga memanfaatkan ITIL sebagai kerangka kerja untuk manajemen layanan TI yang memuat tata kelola proses seperti \textit{change management, incident/problem management}, dan \textit{configuration management}.
-  Meskipun fokus utama ITIL adalah pengelolaan layanan TI, ITIL juga mendukung tata kelola EA pada aspek operasional, pembagian peran pada pelayanan TI, dan \textit{continuous improvement}.
-  ITIL dalam proses tata kelola EA akan memperkuat sektor operasional, standar layanan, evaluasi kualitas, serta pengendalian perubahan agar tetap selaras dengan tujuan bisnis dan arsitektur. \\
-
-  Kelebihan ITIL adalah kemampuannya memperkuat pengelolaan layanan TI, mendorong efisiensi proses, serta meningkatkan kepuasan pengguna dan kualitas layanan organisasi. 
-  Namun, kekurangannya ITIL kurang optimal sebagai kerangka utama tata kelola EA pada level strategis bisnis dan teknologi, karena cakupan utama ITIL hanya pada operasional \textit{service management}  \\
+  \item Pembentukan Forum Untuk Peninjauan \textit{EA Impact Analysis} \\
+  Pembentukan forum berfokus kepada peninjauan hasil \textit{EA impact analysis}.
+  Forum berfungsi sebagai mekanisme yang lebih ringkas dan cepat untuk memverifikasi bahwa analisis yang dilakukan sudah benar dan tidak ada aspek penting yang terlewat.
+  Forum ini menjadi tempat untuk mengklarifikasi temuan, menilai risiko, dan memastikan bahwa keputusan diambil berdasarkan pemahaman yang lengkap.
+  Forum juga memastikan bahwa seluruh \textit{domain} terdampak sudah ditinjau sesuai kebutuhan.
+  Dengan adanya forum ini, hasil analisis dapat diperiksa secara lintas peran sebelum sebuah keputusan dibuat.\\
+  
+  Solusi ini memperkuat tata kelola AE tanpa membutuhkan perubahan besar pada alur proses.
+  Forum memberikan mekanisme validasi formal namun tetap praktis, dan dapat diterapkan sesuai kebutuhan.
+  Selain itu, forum ini membantu memastikan kualitas hasil analisis sekaligus meningkatkan koordinasi lintas unit.
+  Tabel \ref{tbl:alt3} menunjukkan kelebihan dan kekurangan solusi ini. \\
+  \input{table/tabelAlt3.tex}
 \end{enumerate}
 
-Tiga alternatif solusi yang telah dijelaskan sebelumnya merupakan pilihan dalam perbaikan \textit{EA Governance} Paragon Corp. 
+Tiga alternatif solusi yang telah dijelaskan sebelumnya merupakan pilihan dalam perbaikan tata kelola AE Paragon Corp terkhusus pada proses \textit{EA impact analysis}. 
 Setiap solusi memiliki karakteristik, keunggulan, serta potensi tantangannya sendiri. 
 Pada bagian berikutnya, akan dilakukan analisis penentuan solusi untuk memilih alternatif yang paling sesuai dengan kebutuhan dan tujuan organisasi.
 
