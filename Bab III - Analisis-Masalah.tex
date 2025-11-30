@@ -69,7 +69,7 @@ Alur tata kelola AE terbagi menjadi lima tahap, dengan detail sebagai berikut:
   \begin{figure}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
     \centering
     \captionsetup{justification=centering}
-        \includegraphics[width=1\textwidth]{image/as-isIdeation.png}
+        \includegraphics[width=1\textwidth]{image/ideation2.png}
     \caption{Tahapan \textit{Ideation} Saat Ini}
     \label{gambar:asis_ideation}
   \end{figure}
@@ -87,7 +87,7 @@ Alur tata kelola AE terbagi menjadi lima tahap, dengan detail sebagai berikut:
   \begin{figure}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
     \centering
     \captionsetup{justification=centering}
-        \includegraphics[width=1\textwidth]{image/as-isRiskImpact.png}
+        \includegraphics[width=1\textwidth]{image/riskImpact2.png}
     \caption{Tahapan \textit{Risk and Impact} Saat Ini}
     \label{gambar:asis_riskImpact}
   \end{figure}
@@ -107,9 +107,9 @@ Alur tata kelola AE terbagi menjadi lima tahap, dengan detail sebagai berikut:
   \begin{figure}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
     \centering
     \captionsetup{justification=centering}
-        \includegraphics[width=1\textwidth]{image/as-isDev.png}
+        \includegraphics[width=1\textwidth]{image/dev2.png}
     \caption{Tahapan \textit{Development} Saat Ini}
-    \label{gambar:asis_Dev}
+    \label{gambar:asis_dev}
   \end{figure}
 
   \item {Tahap \textit{UAT and Go-Live}} \\
@@ -126,7 +126,7 @@ Alur tata kelola AE terbagi menjadi lima tahap, dengan detail sebagai berikut:
   \begin{figure}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
     \centering
     \captionsetup{justification=centering}
-        \includegraphics[width=1\textwidth]{image/as-isUAT.png}
+        \includegraphics[width=1\textwidth]{image/uat2.png}
     \caption{Tahapan \textit{UAT and Go-Live} Saat Ini}
     \label{gambar:asis_UAT}
   \end{figure}
@@ -143,7 +143,7 @@ Alur tata kelola AE terbagi menjadi lima tahap, dengan detail sebagai berikut:
   \begin{figure}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
     \centering
     \captionsetup{justification=centering}
-        \includegraphics[width=1\textwidth]{image/as-isHypercare.png}
+        \includegraphics[width=1\textwidth]{image/hyper2.png}
     \caption{Tahapan \textit{Hypercare} Saat Ini}
     \label{gambar:asis_hypercare}
   \end{figure}
@@ -192,20 +192,6 @@ Permasalahan ini dipilih karena Tim \textit{Enterprise Architect} Paragon Corp m
 Oleh karena itu, pada Bab IV akan dibahas rancangan solusi untuk memperbaiki proses \textit{EA impact analysis} dengan standar yang diharapkan organisasi.
 
 \section{Analisis \textit{Gap} terhadap \textit{EA Maturity} Level 3 \textit{Defined}}
-% \subsection{Perbandingan dan Evaluasi Tingkat Kematangan AE}
-% Setelah wawancara dengan Tim \textit{Enterprise Architect}, penilaian terakhir terkait \textit{EA maturity} Paragon Corp berada di level 2.
-% Evaluasi tingkat \textit{EA maturity} dilakukan dengan membandingkan kondisi AE saat ini di Paragon Corp dengan standar EAMM yang diadopsi dari TOGAF (mengacu ke Tabel \ref{tbl:EAMM}). 
-% Penilaian dimulai dengan menguraikan karakteristik tiap level pada masing-masing dimensi, khususnya pada target level 3 (\textit{Defined}), lalu mengidentifikasi \textit{gap} yang didapatkan.
-% Tabel \ref{tbl:Level3EAMM} menunjukkan hasil evaluasi antara kondisi aktual terhadap indikator level 3 (\textit{Defined}).
-
-% \input{table/tabelDimensiL3.tex}
-
-% \subsection{Analisis \textit{Gap}}
-% Berdasarkan permasalahan yang telah diidentifikasi sebelumnya, dilakukan analisis \textit{gap} dengan membandingkan kondisi tata kelola AE saat ini Paragon Corp terhadap indikator pada level 3 (\textit{Defined}) dalam TOGAF EAMM. 
-% Setiap dimensi dievaluasi untuk mengidentifikasi aspek mana saja yang belum sesuai standar, sekaligus mencari faktor penyebab serta contoh konkret dari kesenjangan tersebut.
-% Tabel \ref{tbl:GapEAMM} menunjukkan hasil \textit{gap} dan akar masalah \textit{EA Governance} Paragon Corp.
-
-% \input{table/tabelGapEAMM.tex}
 Setelah wawancara dengan Tim \textit{Enterprise Architect} Paragon Corp, penilaian terakhir terkait \textit{EA maturity} Paragon Corp berada di level 2.
 Evaluasi tingkat \textit{EA maturity} dilakukan dengan membandingkan kondisi AE saat ini di Paragon Corp dengan standar EAMM yang diadopsi dari TOGAF (mengacu ke Tabel \ref{tbl:EAMM}). 
 Penilaian dimulai dengan menguraikan karakteristik tiap level pada masing-masing dimensi, khususnya pada target level 3 (\textit{Defined}), lalu mengidentifikasi \textit{gap} yang didapatkan.
@@ -298,43 +284,50 @@ Setiap solusi memiliki karakteristik, keunggulan, serta potensi tantangannya sen
 Pada bagian berikutnya, akan dilakukan analisis penentuan solusi untuk memilih alternatif yang paling sesuai dengan kebutuhan dan tujuan organisasi.
 
 \subsection{Analisis Penentuan Solusi}
-Untuk memilih solusi terbaik dari ketiga alternatif solusi tata kelola EA dipilih metode \textit{decision matrix}. 
-Pemilihan metode ini dikarenakan pengambilan keputusan menjadi transparan dengan menetapkan bobot numerik pada setiap kriteria.
+Untuk memilih solusi terbaik dari ketiga alternatif solusi perbaikan tata kelola EA pada proses \textit{EA impact analysis} dipilih metode \textit{decision matrix}. 
+Metode ini digunakan karena pemilihan solusi berdasarkan pendekatan yang objektif dan terukur.
+\textit{Decision matrix} memberikan keputusan melalui bobot dan skor pada setiap kriteria, sehingga keputusan akan mempertimbangkan faktor yang relevan dengan kebutuhan Paragon Corp.
 
-Kriteria penilaian meliputi struktur tata kelola, kemudahan implementasi, keselarasan dengan strategi bisnis, efisiensi operasional, fleksibilitas adaptasi, serta kontrol dan audit. 
-Bobot setiap kriteria diberikan berdasarkan prioritas dan dampaknya terhadap efektivitas tata kelola EA di Paragon Corp.
+Berikut adalah kriteria dan bobot yang dijadikan sebagai faktor dalam memutuskan solus terbaik.
+\begin{enumerate}
+  \item Kesesuaian dengan Tata Kelola AE (Bobot 30\%)\\
+  Kriteria ini diberi bobot tertinggi karena inti masalah berupa ketidaksesuaian proses \textit{EA impact analysis} dengan tata kelola yang diharapkan.
+  Solusi yang dipilih harus dapat mendukung perbaikan tata kelola secara langsung.
+  Oleh karena itu, kesesuaian dengan prinsip dan standar AE menjadi prioritas utama. \\
 
-Struktur tata kelola berbobot menjadi dasar tata kelola EA yang akan menentukan peran tanggung jawab, proses, dan pengawasan aktivitas proyek.
-Keselerasan dengan strategi bisnis memastikan proses EA mendukung tujuan jangka panjang organisasi.
-Kemudahan implementasi memastikan solusi tata kelola EA yang dipilih akan mempercepat proses, mengurangi duplikasi, dan meningkatkan produktivitas.
-Fleksibilitas adaptasi memastikan kerangka kerja relevan dengan perkembangan bisnis dan teknologi.
-Kontrol dan audit berbobot memastikan kepatuhan dan akuntabilitas proses tata kelola EA.
+  \item Dampak terhadap Konsistensi Proses (Bobot 25\%) \\
+  Masalah yang diangkat yaitu ketidakkonsistenan pelaksanaan \textit{EA impact analysis}.
+  Solusi harus memperkuat keseragaman proses di seluruh unit sehingga konsistensi menjadi prioritas kedua.
+  Bobot diberikan 25\% karena kriteria ini menentukan apakah solusi akan benar-benar menyelesaikan akar permasalahan.\\
 
-Bobot tertinggi (20\%) diberikan untuk kriteria struktur tata kelola dan kriteria keselarasan dengan strategi bisnis karena hasil evaluasi dengan pemangku kepentingan menunjukkan
-permasalahan di Paragon Corp yaitu belum jelasnya peran dan proses tata kelola EA. 
-Tata kelola EA yang lemah akan menyebabkan risiko duplikasi sistem dan respon perubahan yang lambat.
-Bobot 15\% pada kritiria kemudahan implementasi diberikan karena keterbatasan SDM dan kesiapan adopsi kerangka kerja baru, sehingga solusi yang mudah diimplementasikan
-akan memberikan dampak yang nyata.
+  \item Kemudahan Implementasi (Bobot 20\%) \\
+  Paragon Corp membutuhkan solusi yang dapat diterapkan tanpa menghambat proses berjalan, sehingga kemudahan implementasi menjadi penting.
+  Bobot tidak setinggi kriteria kesesuaian tata kelola karena solusi tetap harus mencapai tujuan perbaikan tata kelola.  \\
 
-Efisiensi operasional, fleksibilitas adaptasi, dan kontrol \& audit masing-masing mendapat bobot 15\% karena ketiganya sama penting untuk memastikan perbaikan tata kelola EA 
-akan meningkatkan kualitas layanan, beradaptasi dengan kebutuhan bisnis, dan memenuhi standar kepatuhan arsitektur perusahaan. 
-Bobot-bobot ini didasarkan pada analisis \textit{gap} terkait tata kelola EA di Paragon Corp.
+  \item Kebutuhan Koordinasi Antar Unit (Bobot 15\%) \\
+  Koordinasi lintas unit merupakan bagian penting dari \textit{EA impact analysis}.
+  Namun, bobotnya tidak terlalu tinggi karena koordinasi adalah konsekuensi pelaksanaan, bukan tujuan utama solusi.
+  Meskipun lebih banyak koordinasi bisa meningkatkan kualitas, hal tersebut juga menambah beban proses.\\
+
+  \item Kesesuaian dengan SAP LeanIX (Bobot 10\%) \\
+  SAP LeanIX adalah \textit{tool} utama dokumentasi EA di Paragon Corp.
+  Kesesuaian dengan LeanIX penting untuk keberlanjutan dokumentasi, tetapi bukan kriteria utama untuk menentukan efektivitas tata kelola. \\
+\end{enumerate}
+
 Tabel \ref{tbl:decision_matrix_EA} menunjukkan hasil dari \textit{decision matrix} dalam memilih solusi terbaik.
-
+Dari hasil penilaian menggunakan \textit{decision matrix}, solusi dengan skor total tertinggi yaitu Penyusunan SOP \textit{EA Impact Analysis} Terstandarisasi yang Didukung SAP LeanIX.
+Alternatif ini memperoleh skor total tertinggi sebesar 4.45, mengungguli alternatif lainnya yaitu alternatif 2 (3.75) dan alternatif 3 (3.55).
 \input{table/tabelDecisionMatrix.tex}
 
-Berdasarkan hasil \textit{decision matrix}, solusi dengan skor total tertinggi yaitu \textit{EA Governance} berbasis PMBOK dan TOGAF.
-Hal ini didasarkan karena keunggulan struktur tata kelola yang jelas, kemudahan dalam menyelaraskan dengan strategi bisnis, dan fleksibel terhadap pertumbuhan perusahaan.
-Selain itu, solusi ini akan mengatasi tantangan dokumentasi, proses, dan mengawasi tata kelola.
+Dalam aspek tata kelola, alternatif 1 memperoleh skor tertinggi karena langsung berfokus kepada penyusunan SOP berbasis TOGAF.
+Dengan SOP tersebut, perusahaan mendapatkan pedoman tunggal yang akan mengurangi variasi kerja dalam pelaksanaan \textit{EA impact analysis}.
+Dari aspek konsistensi, alternatif 1 juga memperoleh keunggulan karena memasukkan LeanIX sebagai pendukung implementasi.
+LeanIX merupakan platform yang sudah digunakan Paragon Corp dalam pengelolaan artefak AE.
+Ketika SOP dirancang untuk berjalan beriringan dengan LeanIX, maka proses yang sebelumnya tersebar dan tidak terdokumentasi dengan baik dapat lebih terpusat.
 
-COBIT menunjukkan aspek kontrol dan audit menjadi kelebihannya, sehingga menjadi alternatif solusi untuk perusahaan yang fokus ke tata kelola berbasis kontrol dan penilaian formal.
-Namun, fleksibilitas COBIT lebih rendah untuk organisasi yang masih berubah secara dinamis dan terus berinovasi.
+Jika dibandingkan dengan alternatif 2, solusi tersebut lebih cocok untuk meningkatkan efisiensi aktivitas dokumentasi, namun kurang kuat dalam aspek tata kelola dan konsistensi, sehingga tidak dapat sepenuhnya menjawab akar permasalahan.
+Sementara itu, untuk alternatif 3 memang meningkatkan kualitas evaluasi lintas unit, tetapi memerlukan koordinasi yang lebih intensif dan berpotensi meningkatkan kompleksitas proses, sehingga kurang ideal sebagai solusi utama.
 
-Sementara itu, ITIL sangat optimal dalam mendukung efisiensi pelayanan dan kualitas layanan TI di tingkat operasional.
-Namun, kerangka kerja ini kurang mampu mengakomodasi kebutuhan tata kelola EA yang bersifat strategis dan lintas domain.
-Selain itu, kerangka ini tidak mendalami pengembangan dan desain arsitektur bisnis teknologi secara menyeluruh.
-
-Dengan demikian, solusi \textit{EA Governance} berbasis PMBOK dan TOGAF dipilih menjadi model yang sesuai bagi Paragon Corp.
-Kerangka kerja ini memberikan keseimbangan antara tata kelola EA, pengelolaan arsitektur, dan kemampuan adaptasi terhadap kebutuhan perusahaan.
-Pilihan ini memungkinkan evaluasi efektivitas dan mencapai \textit{maturity governance EA} dilakukan secara objektif dan berkelanjutan.
+Dengan hasil analisis \textit{decision matrix} dan kebutuhan Paragon Corp, alternatif 1 menjadi solusi yang sesuai.
+Solusi ini tidak hanya memberikan struktur tata kelola yang lebih tegas, tetapi juga realistis untuk diimplementasikan dalam lingkungan organisasi yang sudah menggunakan LeanIX sebagai \textit{platform} utama AE.
 
