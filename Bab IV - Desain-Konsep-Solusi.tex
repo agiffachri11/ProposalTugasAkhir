@@ -3,27 +3,112 @@
 % ==========================================
 \chapter{DESAIN KONSEP SOLUSI}
 \label{chap:desain-konsep-solusi}
-\section{Gambaran Umum Solusi}
-Berdasarkan kondisi aktual yang telah dijelaskan dalam Bab III, Paragon Corp menerapkan alur tata kelola AE yang terdiri dari 5 tahap, yaitu \textit{Ideation, Risk and Impact, Development, UAT and Go Live} dan \textit{Hypercare}.
-Dalam alur ini, proses \textit{EA Impact Analysis} dilakukan pada tahap \textit{Risk and Impact} dan finalisasi arsitektur pada tahap \textit{UAT and Go Live}.
-Mengacu ke referensi TOGAF, nantinya proses \textit{EA Impact Analysis} akan dilakukan dan langsung finalisasi pada tahap \textit{Risk and Impact}.
-Sementara itu, tahapan \textit{Development} akan dimulai setelah seluruh arsitektur telah melakukan analisis.
-Perubahan ini mengacu ke TOGAF yang menyatakan bahwa analisis dan keputusan arsitektur dilakukan sebelum perusahaan memasuki fase implementasi.
+\section{Gambaran Sistem dan Proses Saat Ini (\textit{As-Is})}
+xxx
 
-SAP LeanIX akan menjadi komponen kunci dalam solusi sebagai alat dokumentasi, repositori resmi, sumber untuk menganalisis dampak, dan pendukung visualisasi hubungan antar \textit{domain}.
-Peran LeanIX dalam model solusi ini selaras dengan TOGAF yang mengatur bahwa \textit{Architecture Repository} harus berfungsi sebagai penyimpanan artefak arsitektur \autocite{TOGAF_Standard_10th}.
+\section{Model Konseptual Mekanisme EA Impact Analysis (\textit{To-Be})}
+xxx
 
-Solusi yang diusulkan yaitu SOP \textit{EA Impact Analysis} yang mencakup:
-\begin{enumerate}
-    \item Standarisasi proses \textit{EA Impact Analysis} pada tahap proses tata kelola AE saat ini.
-    \item Seluruh artefak setiap \textit{domain} akan di finalisasi pada tahapan \textit{Risk and Impact} agar selaras dengan prinsip TOGAF.
-    \item Penguatan peran SAP LeanIX sebagai repositori tunggal.
-    \item Pemetaan proses ke tahapan tata kelola AE Paragon Corp agar solusi dapat dibandingkan dengan kondisi saat ini.
-    \item Pengembangan model konseptual SOP.
-  \end{enumerate}
+\section{Perbandingan (\textit{As-Is}) dan (\textit{To-Be})}
+xxx
 
-\section{Desain Konsep \textit{SOP EA Impact Analysis}}
-xx
 
-\section{Perbandingan Sistem Saat Ini dan Desain Konsep Solusi}
-xx
+
+% \section{Proses \textit{EA Impact Analysis} Saat Ini}
+% Pada kondisi saat ini, proses tata kelola Arsitektur \textit{Enterprise} (AE) di Paragon Corp dilaksanakan melalui lima tahap, yaitu \textit{Ideation, Risk and Impact, Development, UAT and Go Live,} dan \textit{Hypercare}.
+% Setiap perubahan atau inisiatif baru mengikuti alur ini untuk menentukan kelayakan, risiko, kebutuhan desain arsitektur, hingga implementasi.
+% Berdasarkan observasi dan wawancara dengan Tim \textit{Enterprise Architect} Paragon Corp, \textit{EA Impact Analysis} sudah mulai dilakukan pada tahap \textit{Risk and Impact} dan finalisasi pada tahap \textit{Development}.
+% Proses tata kelola AE saat ini bisa dilihat pada Bab III bagian Struktur dan Mekanisme Tata Kelola Arsitektur Enterprise Saat Ini.
+
+% Mengacu ke referensi TOGAF, nantinya proses \textit{EA Impact Analysis} akan dilakukan dan langsung finalisasi pada tahap \textit{Risk and Impact}. 
+% Sementara itu, tahapan \textit{Development} akan dimulai setelah seluruh arsitektur telah melakukan analisis.
+% Perubahan ini mengacu ke TOGAF yang menyatakan bahwa analisis dan keputusan arsitektur dilakukan sebelum perusahaan memasuki fase implementasi.
+
+% \section{Model Konseptual Solusi}
+% \subsection{Model Konseptual Tata Kelola Arsitektur \textit{Enterprise} (\textit{To-Be})}
+% Model konseptual tata kelola AE berikut menggambarkan alur usulan yang telah disesuaikan sehingga proses \textit{EA Impact Analysis} menjadi terstruktur dan dilakukan pada tahap yang tepat.
+% Perubahan utama yang dilakukan adalah memusatkan seluruh proses \textit{EA Impact Analysis} pada tahap \textit{Risk and Impact}, sehingga keputusan teknis dan bisnis dapat dibuat sebelum proyek memasuki tahap implementasi.
+% Alur tata kelola AE yang diusulkan adalah sebagai berikut:
+% \begin{enumerate}
+%   \item {Tahap \textit{Ideation}} \\
+%   Pada tahapan ini, tidak ada yang berubah dari proses tata kelola, karena \textit{Business Architect} tetap memulai mendokumentasikan artefak bisnis pada \textit{platform} SAP LeanIX pada tahap \textit{Ideation}.
+%   Gambar \ref{gambar:tobe_ideation} menunjukkan usulan dari tahapan \textit{ideation}.\\
+%   \begin{figure}[t] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
+%     \centering
+%     \captionsetup{justification=centering}
+%         \includegraphics[width=1\textwidth]{image/ideation2.png}
+%     \caption{Usulan Tahapan \textit{Ideation}}
+%     \label{gambar:tobe_ideation}
+%   \end{figure}
+
+%   \item {Tahap \textit{Risk and Impact}} \\
+%   Pada usulan tahapan ini, seluruh \textit{domain} melakukan analisis secara lengkap dan melakukan finalisasi untuk setiap artefak \textit{domain}.
+%   Proses \textit{EA Impact Analysis} dilakukan sepenuhnya pada tahapan ini dan melibatkan seluruh \textit{domain}.
+%   Gambar \ref{gambar:tobe_riskImpact} menunjukkan usulan dari tahapan \textit{risk and impact}.\\
+%   \begin{figure}[t] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
+%     \centering
+%     \captionsetup{justification=centering}
+%         \includegraphics[width=1\textwidth]{image/riskImpact2.png}
+%     \caption{Usulan Tahapan \textit{Risk and Impact}}
+%     \label{gambar:tobe_riskImpact}
+%   \end{figure}
+
+%   \item {Tahap \textit{Development}} \\
+%   Pada usulan tahapan \textit{Development}, proses melanjutkan dokumentasi artefak dihilangkan, karena semuanya telah melakukan finalisasi pada tahap \textit{Risk and Impact}.
+%   Gambar \ref{gambar:tobe_dev} menunjukkan usulan dari tahapan \textit{development}.\\
+%   \begin{figure}[t] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
+%     \centering
+%     \captionsetup{justification=centering}
+%         \includegraphics[width=1\textwidth]{image/dev2.png}
+%     \caption{Usulan Tahapan \textit{Development}}
+%     \label{gambar:tobe_dev}
+%   \end{figure}
+
+%   \item {Tahap \textit{UAT and Go-Live}} \\
+%   Pada usulan alur untuk tahapan \textit{UAT and Go-Live}, proses finalisasi dihilangkan, karena proses finalisasi dipidahkan ke proses \textit{Risk and Impact}
+%   Gambar \ref{gambar:tobe_UAT} menunjukkan usulan dari tahapan \textit{UAT and Go-Live}.\\
+%   \begin{figure}[t] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
+%     \centering
+%     \captionsetup{justification=centering}
+%         \includegraphics[width=1\textwidth]{image/uat2.png}
+%     \caption{Usulan Tahapan \textit{UAT and Go-Live}}
+%     \label{gambar:tobe_UAT}
+%   \end{figure}
+
+%   \item {Tahap \textit{Hypercare}} \\
+%   Pada tahapan ini, tidak ada yang berubah dari proses tata kelola, karena pada tahapan saat ini juga tidak lagi melibatkan proses \textit{EA Impact Analysis} di dalamnya.
+%   Gambar \ref{gambar:tobe_hypercare} menunjukkan usulan dari tahapan \textit{hypercare}.\\
+%   \begin{figure}[t] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
+%     \centering
+%     \captionsetup{justification=centering}
+%         \includegraphics[width=0.7\textwidth]{image/hyper2.png}
+%     \caption{Usulan Tahapan \textit{Hypercare}}
+%     \label{gambar:tobe_hypercare}
+%   \end{figure}
+% \end{enumerate}
+
+% \subsection{Model Konseptual Mekanisme \textit{EA Impact Analysis}}
+% Model konseptual mekanisme \textit{EA Impact Analysis} disusun berdasarkan kerangka TOGAF yang menekankan setiap perubahan arsitektur harus dianalisis dampaknya secara menyeluruh terhadap seluruh \textit{domain} arsitektur.
+% Model yang disajikan berada pada tingkat konseptual dan belum masuk ke tahap teknis.
+% Model ini berfokus memberikan gambaran mengenai struktur mekanisme yang diusulkan dan bagaimana proses analisis dampak dilakukan secara terstandarisasi sesuai prinsip TOGAF.
+
+% Secara umum, mekanisme \textit{EA Impact Analysis} dimulai dari masuknya suatu usulan perubahan yang diajukan melalui alur tata kelola AE.
+% Berdasarkan TOGAF, setiap perubahan harus menjalani proses \textit{Architecture Impact Assessment} untuk menilai konsekuensi arsitektural yang mungkin terjadi.
+
+% Pada struktur \textit{domain} TOGAF, mekanisme ini melibatkan lima \textit{domain}, yaitu \textit{Business Architecture, Data Architecture, Application Architecture, Technology Architecture,} dan \textit{Security} sebagai \textit{architecture concern} berdasarkan pedoman keamanan TOGAF.
+% Pada \textit{Business Architecture}, analisis dilakukan dengan meninjau dampak terhadap proses bisnis, kapabilitas bisnis, layanan bisnis, peran, dan unit organisasi.
+% Pada \textit{Data Architecture}, analisis difokuskan pada perubahan terhadap entitas data, relasi data, aliran data, dan siklus hidup data.
+% Pada \textit{Application Architecture}, evaluasi dilakukan terhadap komponen aplikasi, layanan aplikasi, antarmuka, serta interaksi atau informasi antar aplikasi.
+% Pada \textit{Technology Architecture}, penilaian meliputi dampak terhadap komponen teknologi, layanan \textit{platform}, dan elemen teknologi baik pada tingkat logis maupun fisik.
+% Sementara itu, \textit{domain security} meninjau dampak terhadap kontrol akses, mekanisme otentikasi dan otorisasi, serta aspek keamanan informasi yang mencakup kerahasiaan, integritas, dan ketersediaan.
+
+% Setelah setiap \textit{domain} menilai dampak sesuai elemen arsitekturnya masing-masing, seluruh hasil evaluasi dikonsolidasikan menjadi satu keluaran.
+% TOGAF mengarahkan bahwa hasil konsolidasi ini berfungsi sebagai dasar pengambilan keputusan dalam siklus ADM dalam menentukan apakah perubahan dapat dilanjutkan, perlu penyesuaian, atau harus ditolak.
+% Gambar \ref{gambar:konseptual_sol} menunjukkan hubungan konseptual pada mekanisme \textit{EA Impact Analysis}.
+% \begin{figure}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
+%   \centering
+%   \captionsetup{justification=centering}
+%       \includegraphics[width=1\textwidth]{image/konseptualSolusi.png}
+%   \caption{Hubungan Konseptual Mekanisme \textit{EA Impact Analysis}}
+%   \label{gambar:konseptual_sol}
+% \end{figure}

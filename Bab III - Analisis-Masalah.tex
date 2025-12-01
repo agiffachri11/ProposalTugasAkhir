@@ -66,7 +66,7 @@ Alur tata kelola AE terbagi menjadi lima tahap, dengan detail sebagai berikut:
   Semua progres dipantau melalui excel \textit{tracker} untuk memastikan ketercapaian setiap aktivitas pada tahapan \textit{ideation}. 
   Tahap \textit{ideation} ini memastikan seluruh rencana perubahan telah tervalidasi sejak awal sebelum masuk ke tahap \textit{risk and impact}. 
   Gambar \ref{gambar:asis_ideation} menunjukkan tahapan \textit{ideation} saat ini.\\
-  \begin{figure}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
+  \begin{figure}[t] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
     \centering
     \captionsetup{justification=centering}
         \includegraphics[width=1\textwidth]{image/ideation2.png}
@@ -84,10 +84,10 @@ Alur tata kelola AE terbagi menjadi lima tahap, dengan detail sebagai berikut:
   Kegiatan ini berjalan secara paralel dengan langkah \textit{Cloud Infrastructure} dan \textit{IT Security} dalam membuat rancangan awal (\textit{draft}) arsitektur infrastruktur dan keamanan pada \textit{platform} SAP LeanIX.. 
   Tahapan \textit{Risk and Impact} bertujuan agar semua risiko potensial serta dampak perubahan dapat teridentifikasi dan dianalisis sebelum memasuki tahap \textit{development}. 
   Gambar \ref{gambar:asis_riskImpact} menunjukkan tahapan \textit{risk and impact} saat ini.\\
-  \begin{figure}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
+  \begin{figure}[t] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
     \centering
     \captionsetup{justification=centering}
-        \includegraphics[width=1\textwidth]{image/riskImpact2.png}
+        \includegraphics[width=0.7\textwidth]{image/riskImpact2.png}
     \caption{Tahapan \textit{Risk and Impact} Saat Ini}
     \label{gambar:asis_riskImpact}
   \end{figure}
@@ -104,7 +104,7 @@ Alur tata kelola AE terbagi menjadi lima tahap, dengan detail sebagai berikut:
   Selama proses \textit {development}, pembaruan artefak dapat dilakukan secara paralel sesuai kebutuhan. 
   Sebelum transisi ke tahap \textit{UAT and Go-Live}, \textit{Enterprise Architect} akan melakukan \textit{review} kelengkapan \textit{EA Project Monitoring} serta memastikan seluruh \textit{checklist} terpenuhi. 
   Gambar \ref{gambar:asis_dev} menunjukkan tahapan \textit{development} saat ini.\\
-  \begin{figure}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
+  \begin{figure}[t] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
     \centering
     \captionsetup{justification=centering}
         \includegraphics[width=1\textwidth]{image/dev2.png}
@@ -123,7 +123,7 @@ Alur tata kelola AE terbagi menjadi lima tahap, dengan detail sebagai berikut:
   Setelah artefak final, maka dilanjutkan pengecekan penyelesaian artefak saat \textit{Change Advisory Board} (CAB) jika perubahan bersifat \textit{high impact}, sedangkan artefak akan di cek saat \textit{Bi-weekly Architecture Change Review} jika perubahannya bersifat \textit{minimum impact}. 
   Setelah seluruh proses verifikasi dilalui dan artefak dinyatakan lengkap, status perubahan yang \textit{minimum impact} akan ditandai "\textit{complete}" pada \textit{tracker}, sedangkan untuk \textit{high impact} diterima dalam \textit{Request for Change} (RFC) yang kemudian dapat dilanjutkan ke produksi. 
   Gambar \ref{gambar:asis_UAT} menunjukkan tahapan \textit{UAT and Go-Live} saat ini.\\
-  \begin{figure}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
+  \begin{figure}[t] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
     \centering
     \captionsetup{justification=centering}
         \includegraphics[width=1\textwidth]{image/uat2.png}
@@ -140,10 +140,10 @@ Alur tata kelola AE terbagi menjadi lima tahap, dengan detail sebagai berikut:
   \textit{Enterprise Architect} akan memastikan seluruh \textit{checklist} sudah lengkap sebelum \textit{closing project}. 
   Selain itu, \textit{Enterprise Architect} memberikan konsultasi arsitektural selama periode \textit{hypercare} untuk membantu verifikasi artefak. 
   Gambar \ref{gambar:asis_hypercare} menunjukkan tahapan \textit{hypercare} saat ini.\\
-  \begin{figure}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
+  \begin{figure}[t] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
     \centering
     \captionsetup{justification=centering}
-        \includegraphics[width=1\textwidth]{image/hyper2.png}
+        \includegraphics[width=0.7\textwidth]{image/hyper2.png}
     \caption{Tahapan \textit{Hypercare} Saat Ini}
     \label{gambar:asis_hypercare}
   \end{figure}
@@ -202,50 +202,67 @@ Pada Tabel \ref{tbl:GapEA} menunjukkan hasil analisis \textit{gap}.
 \end{landscape}
 
 \section{Analisis Kebutuhan Perbaikan Tata Kelola Arsitektur \textit{Enterprise}}
-Berdasarkan hasil identifikasi masalah dan analisis \textit{gap} dalam implementasi tata kelola AE di Paragon Corp, terdapat sejumlah kebutuhan mendesak yang harus diperbaiki agar tata kelola arsitektur dapat berjalan lebih efektif dan konsisten.
-\begin{enumerate}
-  \item Konsistensi Proses Konsultasi dan \textit{Review} EA \\
-  Penegasan kebijakan diperlukan pada setiap proyek, baik itu \textit{high impact} maupun \textit{minimum impact} tetap melewati tahap konsultasi dan \textit{review} oleh tim EA. 
-  Standardisasi proses ini penting agar tidak ada perubahan yang luput dari pengawasan arsitektur, sehingga risiko ketidaksesuaian atau tumpang tindih bisa dicegah sejak dini. \\
+Pada bagian ini, analisis kebutuhan perbaikan tata kelola Arsitektur \textit{Enterprise} (AE) difokuskan secara spesifik pada masalah utama yang dipilih untuk diselesaikan, yaitu proses \textit{EA Impact Analysis} yang belum menyeluruh dan belum mengikuti standar tata kelola yang diharapkan.
+Pemilihan fokus ini didasarkan pada hasil analisis \textit{gap} pada dimensi \textit{Architecture Process}.
+Pada dimensi tersebut, ditemukan penerapan proses EA tidak konsisten di seluruh tim.
 
-  \item Peningkatan Kesadaran dan Kebijakan Dokumentasi Sejak Awal \\
-  Semua tim, terutama yang menangani infrastruktur dan keamanan, harus didorong untuk secara proaktif mendokumentasikan artefak arsitektur sejak tahap awal proyek, bukan setelah implementasi berjalan. 
-  Peningkatan kesadaran ini penting agar risiko dapat teridentifikasi lebih awal dan kualitas dokumentasi lebih terjamin. \\
+Salah satu penyebab utama inkonsistensi tersebut adalah ketiadaan mekanisme yang dapat memastikan proses \textit{EA Impact Analysis} dilakukan secara terstruktur.
+Oleh karena itu, identifikasi kebutuhan diarahkan untuk menyelesaikan proses \textit{EA Impact Analysis} yang dapat diterapkan secara konsisten pada seluruh unit terkait.
+Kebutuhan dibedakan menjadi kebutuhan fungsional dan kebutuhan non-fungsional yang diperlukan untuk mendukung implementasi \textit{EA Impact Analysis} yang sesuai standar.
 
-  \item Pembentukan \textit{Architecture Review Board} (ARB) \\
-  Paragon Corp perlu segera membentuk forum formal seperti ARB yang melibatkan berbagai peran dan unit. Forum ini berfungsi untuk mengkaji, mengesahkan, dan memantau keputusan arsitektur agar lebih transparan, kolektif, serta tidak hanya didominasi oleh tim inti TI saja. \\
+\subsection{Kebutuhan Fungsional}
+Kebutuhan fungsional diperlukan untuk memastikan proses \textit{EA Impact Analysis} dapat berjalan sesuai standar tata kelola AE yang ditetapkan.
+Tabel \ref{tbl:KF} menunjukkan kebutuhan fungsional yang menjawab masalah \textit{EA Impact Analysis}. \\
+\input{table/tabelFungsional.tex}
 
-  \item Integrasi Evaluasi Bisnis dalam Setiap Pengembangan IT \\
-  Penilaian atas kebutuhan bisnis harus menjadi landasan utama dalam setiap perubahan atau investasi TI. Setiap proyek atau pengembangan solusi teknologi sebaiknya diwajibkan melalui validasi dan kajian formal bersama \textit{Business Architect}, 
-  sehingga seluruh inisiatif benar-benar selaras dengan prioritas dan strategi perusahaan. \\
+\subsection{Kebutuhan Non-Fungsional}
+Kebutuhan non fungsional diperlukan untuk mendukung keberhasilan implementasi proses \textit{EA Impact Analysis}.
+Tabel \ref{tbl:KNF} menunjukkan kebutuhan non-fungsional yang menjawab masalah \textit{EA Impact Analysis}. \\
+\input{table/tabelNonFungsional.tex}
 
-  \item Optimalisasi Pemanfaatan SAP LeanIX Lintas Unit \\
-  SAP LeanIX tidak cukup hanya digunakan oleh tim TI. Perlu dilakukan edukasi dan pelatihan agar unit bisnis dan manajemen juga mampu mengakses, memahami, serta memanfaatkan artefak EA sebagai bahan referensi untuk pengambilan keputusan bersama. \\
+% Berdasarkan hasil identifikasi masalah dan analisis \textit{gap} dalam implementasi tata kelola AE di Paragon Corp, terdapat sejumlah kebutuhan mendesak yang harus diperbaiki agar tata kelola arsitektur dapat berjalan lebih efektif dan konsisten.
+% \begin{enumerate}
+%   \item Konsistensi Proses Konsultasi dan \textit{Review} EA \\
+%   Penegasan kebijakan diperlukan pada setiap proyek, baik itu \textit{high impact} maupun \textit{minimum impact} tetap melewati tahap konsultasi dan \textit{review} oleh tim EA. 
+%   Standardisasi proses ini penting agar tidak ada perubahan yang luput dari pengawasan arsitektur, sehingga risiko ketidaksesuaian atau tumpang tindih bisa dicegah sejak dini. \\
 
-  \item Pembiasaan Budaya Dokumentasi dan Komunikasi Terbuka \\
-  Membangun budaya dokumentasi yang kuat serta komunikasi artefak arsitektur yang terbuka ke seluruh pemangku kepentingan sangat diperlukan. Semua pihak harus sadar bahwa dokumen arsitektur bukan hanya pelengkap administrasi, namun landasan pengendalian dan perbaikan tata kelola TI di masa depan. 
-\end{enumerate}
+%   \item Peningkatan Kesadaran dan Kebijakan Dokumentasi Sejak Awal \\
+%   Semua tim, terutama yang menangani infrastruktur dan keamanan, harus didorong untuk secara proaktif mendokumentasikan artefak arsitektur sejak tahap awal proyek, bukan setelah implementasi berjalan. 
+%   Peningkatan kesadaran ini penting agar risiko dapat teridentifikasi lebih awal dan kualitas dokumentasi lebih terjamin. \\
+
+%   \item Pembentukan \textit{Architecture Review Board} (ARB) \\
+%   Paragon Corp perlu segera membentuk forum formal seperti ARB yang melibatkan berbagai peran dan unit. Forum ini berfungsi untuk mengkaji, mengesahkan, dan memantau keputusan arsitektur agar lebih transparan, kolektif, serta tidak hanya didominasi oleh tim inti TI saja. \\
+
+%   \item Integrasi Evaluasi Bisnis dalam Setiap Pengembangan IT \\
+%   Penilaian atas kebutuhan bisnis harus menjadi landasan utama dalam setiap perubahan atau investasi TI. Setiap proyek atau pengembangan solusi teknologi sebaiknya diwajibkan melalui validasi dan kajian formal bersama \textit{Business Architect}, 
+%   sehingga seluruh inisiatif benar-benar selaras dengan prioritas dan strategi perusahaan. \\
+
+%   \item Optimalisasi Pemanfaatan SAP LeanIX Lintas Unit \\
+%   SAP LeanIX tidak cukup hanya digunakan oleh tim TI. Perlu dilakukan edukasi dan pelatihan agar unit bisnis dan manajemen juga mampu mengakses, memahami, serta memanfaatkan artefak EA sebagai bahan referensi untuk pengambilan keputusan bersama. \\
+
+%   \item Pembiasaan Budaya Dokumentasi dan Komunikasi Terbuka \\
+%   Membangun budaya dokumentasi yang kuat serta komunikasi artefak arsitektur yang terbuka ke seluruh pemangku kepentingan sangat diperlukan. Semua pihak harus sadar bahwa dokumen arsitektur bukan hanya pelengkap administrasi, namun landasan pengendalian dan perbaikan tata kelola TI di masa depan. 
+% \end{enumerate}
 
 \section{Analisis Pemilihan Solusi}
 \subsection{Alternatif Solusi}
-Berdasarkan permasalahan yang akan diselesaikan, yaitu pelaksanaan \textit{EA impact analysis} yang belum memiliki tata kelola yang jelas.
+Berdasarkan permasalahan yang akan diselesaikan, yaitu pelaksanaan \textit{EA Impact Analysis} yang belum memiliki tata kelola yang jelas.
 Bagian ini merumuskan tiga alternatif solusi yang dapat diterapkan oleh Paragon Corp. 
 Ketiga alternatif ini dirancang setara sehingga depat dibandingkan melalui analisis keputusan pada bagian berikutnya.
 \begin{enumerate}
-  \item Penyusunan SOP \textit{EA Impact Analysis} Terstandarisasi yang Didukung SAP LeanIX \\
-  Penyusunan SOP \textit{EA impact analysis} mengacu pada kerangka kerja TOGAF sebagai referensi.
-  TOGAF dipilih karena memberikan panduan mengenai langkah-langkah analisis arsitektur, termasuk bagaimana menilai dampak terhadap \textit{domain} bisnis, data, aplikasi, infrastruktur, dan keamanan.
-  Selain itu, perusahaan akan memiliki dasar atau panduan yang kuat dalam menjalankan proses \textit{EA impact analysis} karena prosesnya tidak lagi bergantung pada interpretasi setiap tim.
-  SOP ini juga memastikan seluruh aktivitas atau proses analisis memiliki urutan yang jelas.\\
+  \item Penyusunan Mekanisme \textit{EA Impact Analysis} yang Didukung SAP LeanIX \\
+  Penyusunan mekanisme \textit{EA Impact Analysis} mengacu pada kerangka kerja TOGAF sebagai referensi.
+  TOGAF dipilih karena menyediakan pedoman mengenai elemen-elemen analisis arsitektur, termasuk bagaimana meilai dampak terhadap \textit{domain} bisnis, data, aplikasi, infrastruktur, dan keamanan.
+  Dengan mekanisme ini, perusahaan memiliki kerangka yang jelas dan tidak lagi bergantung kepada interpretai masing-masing tim.\\
  
-  Dalam penerapan solusi ini, SOP akan didukung oleh \textit{platform} SAP LeanIX untuk mengisi dan menyimpan hasil analisis.
-  SAP LeanIX sudah digunakan oleh Paragon Corp sebagai repositori AE sehingga integrasi dengan SOP akan memastikan semua analisis terdokumentasi di satu tempat yang dapat diakses semua tim terkait.
+  Dalam penerapan solusi ini, proses mekanisme akan didukung oleh \textit{platform} SAP LeanIX untuk mengisi dan menyimpan hasil analisis.
+  SAP LeanIX sudah digunakan oleh Paragon Corp sebagai repositori AE sehingga semua analisis terdokumentasi di satu tempat yang dapat diakses semua tim terkait.
   Dokumentasi hasil analisis tidak lagi tersebar atau berbeda-beda formatnya karena seluruh tim mengisi pada \textit{platform} yang sama.
   Selain itu, SAP LeanIX juga menyediakan katalog arsitektur dan relasi antar domain sehingga proses menjadi lebih efisien.\\
   
   Solusi ini menekankan konsistensi, kejelasan, dan keseragaman dalam pelaksanaan \textit{EA impact analysis}. 
-  Solusi ini juga mengatasi masalah utama yaitu belum adanya prosedur formal yang diikuti dan adanya perbedaan cara pelaksanaan antar tim.
-  Oleh karena itu, SOP ini akan berperan menjadi pedoman dan SAP LeanIX akan berperan dalam menjaga dokumentasi.
+  Solusi ini juga mengatasi masalah utama yaitu belum adanya kerangka formal yang diikuti dan adanya perbedaan cara kerja antar tim.
+  Oleh karena itu, mekanisme \textit{EA Impact Analysis} ini akan berperan menjadi pedoman dan SAP LeanIX akan berperan dalam menjaga dokumentasi.
   Tabel \ref{tbl:alt1} menunjukkan kelebihan dan kekurangan solusi ini. \\
   \input{table/tabelAlt1.tex}
 
@@ -255,7 +272,7 @@ Ketiga alternatif ini dirancang setara sehingga depat dibandingkan melalui anali
   Aspek yang diperiksa seperti dampak terhadap proses bisnis, aplikasi terkait, data yang digunakan, potensi risiko keamanan, kesiapan infrastruktur, dan dependensi yang perlu diperhatikan.
   Dengan solusi ini, tim tidak perlu menafsirkan sendiri apa saja yang harus dianalisis sehingga kualitas analisis dapat lebih konsisten.\\
 
-  Selain \textit{checklist}, \textit{template EA impact analysis} disediakan untuk mendokumentasikan hasil analisis.
+  Selain \textit{checklist}, \textit{template EA Impact Analysis} disediakan untuk mendokumentasikan hasil analisis.
   \textit{Template} ini memastikan laporan mudah dibaca dan dapat ditinjau oleh Tim \textit{Enterprise Architect}.
   \textit{Template} dapat memuat bagian-bagian seperti ringkasan inisiatif, \textit{domain} terdampak dan risiko yang ditemukan.\\
 
@@ -266,7 +283,7 @@ Ketiga alternatif ini dirancang setara sehingga depat dibandingkan melalui anali
   \input{table/tabelAlt2.tex}
 
   \item Pembentukan Forum Untuk Peninjauan \textit{EA Impact Analysis} \\
-  Pembentukan forum berfokus kepada peninjauan hasil \textit{EA impact analysis}.
+  Pembentukan forum berfokus kepada peninjauan hasil \textit{EA Impact Analysis}.
   Forum berfungsi sebagai mekanisme yang lebih ringkas dan cepat untuk memverifikasi bahwa analisis yang dilakukan sudah benar dan tidak ada aspek penting yang terlewat.
   Forum ini menjadi tempat untuk mengklarifikasi temuan, menilai risiko, dan memastikan bahwa keputusan diambil berdasarkan pemahaman yang lengkap.
   Forum juga memastikan bahwa seluruh \textit{domain} terdampak sudah ditinjau sesuai kebutuhan.
@@ -279,24 +296,24 @@ Ketiga alternatif ini dirancang setara sehingga depat dibandingkan melalui anali
   \input{table/tabelAlt3.tex}
 \end{enumerate}
 
-Tiga alternatif solusi yang telah dijelaskan sebelumnya merupakan pilihan dalam perbaikan tata kelola AE Paragon Corp terkhusus pada proses \textit{EA impact analysis}. 
+Tiga alternatif solusi yang telah dijelaskan sebelumnya merupakan pilihan dalam perbaikan tata kelola AE Paragon Corp terkhusus pada proses \textit{EA Impact Analysis}. 
 Setiap solusi memiliki karakteristik, keunggulan, serta potensi tantangannya sendiri. 
 Pada bagian berikutnya, akan dilakukan analisis penentuan solusi untuk memilih alternatif yang paling sesuai dengan kebutuhan dan tujuan organisasi.
 
 \subsection{Analisis Penentuan Solusi}
-Untuk memilih solusi terbaik dari ketiga alternatif solusi perbaikan tata kelola EA pada proses \textit{EA impact analysis} dipilih metode \textit{decision matrix}. 
+Untuk memilih solusi terbaik dari ketiga alternatif solusi perbaikan tata kelola EA pada proses \textit{EA Impact Analysis} dipilih metode \textit{decision matrix}. 
 Metode ini digunakan karena pemilihan solusi berdasarkan pendekatan yang objektif dan terukur.
 \textit{Decision matrix} memberikan keputusan melalui bobot dan skor pada setiap kriteria, sehingga keputusan akan mempertimbangkan faktor yang relevan dengan kebutuhan Paragon Corp.
 
 Berikut adalah kriteria dan bobot yang dijadikan sebagai faktor dalam memutuskan solus terbaik.
 \begin{enumerate}
   \item Kesesuaian dengan Tata Kelola AE (Bobot 30\%)\\
-  Kriteria ini diberi bobot tertinggi karena inti masalah berupa ketidaksesuaian proses \textit{EA impact analysis} dengan tata kelola yang diharapkan.
+  Kriteria ini diberi bobot tertinggi karena inti masalah berupa ketidaksesuaian proses \textit{EA Impact Analysis} dengan tata kelola yang diharapkan.
   Solusi yang dipilih harus dapat mendukung perbaikan tata kelola secara langsung.
   Oleh karena itu, kesesuaian dengan prinsip dan standar AE menjadi prioritas utama. \\
 
   \item Dampak terhadap Konsistensi Proses (Bobot 25\%) \\
-  Masalah yang diangkat yaitu ketidakkonsistenan pelaksanaan \textit{EA impact analysis}.
+  Masalah yang diangkat yaitu ketidakkonsistenan pelaksanaan \textit{EA Impact Analysis}.
   Solusi harus memperkuat keseragaman proses di seluruh unit sehingga konsistensi menjadi prioritas kedua.
   Bobot diberikan 25\% karena kriteria ini menentukan apakah solusi akan benar-benar menyelesaikan akar permasalahan.\\
 
@@ -305,7 +322,7 @@ Berikut adalah kriteria dan bobot yang dijadikan sebagai faktor dalam memutuskan
   Bobot tidak setinggi kriteria kesesuaian tata kelola karena solusi tetap harus mencapai tujuan perbaikan tata kelola.  \\
 
   \item Kebutuhan Koordinasi Antar Unit (Bobot 15\%) \\
-  Koordinasi lintas unit merupakan bagian penting dari \textit{EA impact analysis}.
+  Koordinasi lintas unit merupakan bagian penting dari \textit{EA Impact Analysis}.
   Namun, bobotnya tidak terlalu tinggi karena koordinasi adalah konsekuensi pelaksanaan, bukan tujuan utama solusi.
   Meskipun lebih banyak koordinasi bisa meningkatkan kualitas, hal tersebut juga menambah beban proses.\\
 
@@ -315,15 +332,15 @@ Berikut adalah kriteria dan bobot yang dijadikan sebagai faktor dalam memutuskan
 \end{enumerate}
 
 Tabel \ref{tbl:decision_matrix_EA} menunjukkan hasil dari \textit{decision matrix} dalam memilih solusi terbaik.
-Dari hasil penilaian menggunakan \textit{decision matrix}, solusi dengan skor total tertinggi yaitu Penyusunan SOP \textit{EA Impact Analysis} Terstandarisasi yang Didukung SAP LeanIX.
+Dari hasil penilaian menggunakan \textit{decision matrix}, solusi dengan skor total tertinggi yaitu Penyusunan Mekanisme \textit{EA Impact Analysis} yang Didukung SAP LeanIX.
 Alternatif ini memperoleh skor total tertinggi sebesar 4.45, mengungguli alternatif lainnya yaitu alternatif 2 (3.75) dan alternatif 3 (3.55).
 \input{table/tabelDecisionMatrix.tex}
 
-Dalam aspek tata kelola, alternatif 1 memperoleh skor tertinggi karena langsung berfokus kepada penyusunan SOP berbasis TOGAF.
-Dengan SOP tersebut, perusahaan mendapatkan pedoman tunggal yang akan mengurangi variasi kerja dalam pelaksanaan \textit{EA impact analysis}.
+Dalam aspek tata kelola, alternatif 1 memperoleh skor tertinggi karena langsung berbasis TOGAF.
+Dengan mekanisme tersebut, perusahaan mendapatkan pedoman tunggal yang akan mengurangi variasi kerja dalam pelaksanaan \textit{EA Impact Analysis}.
 Dari aspek konsistensi, alternatif 1 juga memperoleh keunggulan karena memasukkan LeanIX sebagai pendukung implementasi.
-LeanIX merupakan platform yang sudah digunakan Paragon Corp dalam pengelolaan artefak AE.
-Ketika SOP dirancang untuk berjalan beriringan dengan LeanIX, maka proses yang sebelumnya tersebar dan tidak terdokumentasi dengan baik dapat lebih terpusat.
+LeanIX merupakan \textit{platform} yang sudah digunakan Paragon Corp dalam pengelolaan artefak AE.
+Ketika mekanisme dirancang untuk berjalan beriringan dengan LeanIX, maka proses yang sebelumnya tersebar dan tidak terdokumentasi dengan baik dapat lebih terpusat.
 
 Jika dibandingkan dengan alternatif 2, solusi tersebut lebih cocok untuk meningkatkan efisiensi aktivitas dokumentasi, namun kurang kuat dalam aspek tata kelola dan konsistensi, sehingga tidak dapat sepenuhnya menjawab akar permasalahan.
 Sementara itu, untuk alternatif 3 memang meningkatkan kualitas evaluasi lintas unit, tetapi memerlukan koordinasi yang lebih intensif dan berpotensi meningkatkan kompleksitas proses, sehingga kurang ideal sebagai solusi utama.
