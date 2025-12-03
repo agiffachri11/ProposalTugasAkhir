@@ -17,8 +17,9 @@ Karakterisitik AE harus diintegrasikan dengan praktik manajemen tata kelola agar
 Penerapan tata kelola AE juga memastikan pembagian peran, tanggung jawab, dan mekanisme evaluasi untuk memastikan keberlanjutan AE.
 
 Untuk memastikan tata kelola AE berjalan efektif, TOGAF menyediakan \textit{Architecture Capability Maturity Model} (ACMM) yang digunakan untuk menilai tingkat kematangan kapabilitas arsitektur organisasi.
+Saat ini, tingkat kematangan tata kelola AE Paragon Corp berada pada level 2.
+Oleh karena itu level 3 akan dijadikan acuan untuk menilai tata kelola AE Paragon Corp dan mengevaluasi dimensi yang perlu diperbaiki.
 Model ini memiliki 5 tingkatan dan pada level 3 (\textit{defined}), proses tata kelola AE telah terdokumentasi, dilaksanakan secara konsisten, dan memiliki struktur peran yang jelas \autocite{TOGAF_Standard_10th}.
-Dengan demikian, tingkat kematangan ini dijadikan acuan untuk menilai tata kelola AE Paragon Corp dan mengevaluasi dimensi yang perlu diperbaiki.
 
 Penerapan AE memerlukan evaluasi terhadap seberapa efektif tata kelolanya.
 Efektivitas ini bisa diketahui melalui tingkat kepatuhan proyek terhadap standar, dokumentasi yang dihasilkan, dan keterlibatan pemangku kepentingan \autocite{foorthuis2016theory}.
@@ -34,59 +35,58 @@ Dengan mempertimbangkan tantangan tersebut, tugas akhir ini berfokus kepada anal
 
 % --- Rumusan Masalah ---
 \section{Rumusan Masalah}
-Berdasarkan latar belakang masalah yang telah diuraikan di atas, rumusan masalah yang akan menjadi pokok pembahasan dalam pengerjaan tugas akhir ini adalah sebagai berikut:
+Berdasarkan latar belakang yang telah diuraikan sebelumnya, masalah utama yang dihadapi yaitu tata kelola AE pada Paragon Corp belum dijalankan secara formal.
+Hal ini bisa mengakibatkan duplikasi sistem dan ketiadaan standar arsitektural.
+Masalah ini menjadi landasan yang akan diselesaikan pada tugas akhir ini.
+Rumusan masalah dijabarkan sebagai berikut.
 \begin{enumerate}
 \item	Bagaimana alur tata kelola AE saat ini di Paragon Corp?
-\item	Apa saja \textit{gap} yang perlu ditangani untuk mencapai tingkat kematangan level 3 tata kelola AE?
-\item	Bagaimana rancangan tata kelola AE yang lebih terstruktur dan mampu memberikan dampak terhadap pengambilan keputusan strategis perusahaan?
-\item   Bagaimana cara mengukur peningkatan efektivitas dan dampak penerapan AE setelah dilakukan perbaikan tata kelola?
+\item	Apa saja \textit{gap} untuk mencapai tingkat kematangan level 3 tata kelola AE?
+\item	Bagaimana rancangan tata kelola AE yang lebih terstruktur?
 \end{enumerate}
 
 % --- Tujuan ---
 \section{Tujuan}
+Berdasarkan rumusan masalah yang telah dipaparkan sebelumnya, tujuan utama dari pengerjaan tugas akhir ini yaitu merancang model perbaikan tata kelola AE untuk meningkatkan efektivitas dalam mengambil keputusan arsitektur.
+Untuk mendukung tujuan tersebut, ada tujuan pendorong agar tujuan utama berhasil diimplementasikan.
 Tujuan dari tugas akhir ini adalah sebagai berikut:
 \begin{enumerate}
 \item	Menganalisis kondisi tata kelola AE yang saat ini diterapkan di Paragon Corp.
 \item	Mengidentifikasi \textit{gap} antara kondisi saat ini dengan \textit{best practice} AE pada tingkat kematangan level 3 tata kelola AE.
 \item	Merancang model perbaikan tata kelola AE yang efektif dan sesuai dengan konteks organisasi.
-\item   Mengevaluasi dampak penerapan model perbaikan terhadap efektivitas kinerja AE.
 \end{enumerate}
 
 % --- Metodologi Pengerjaan TA ---
 \section{Metodologi}
-Metodologi pengerjaan tugas akhir berikut ini menjelaskan tahapan-tahapan yang dilakukan selama proses penyusunan tugas akhir untuk menjawab rumusan masalah dan mencapai tujuan tugas akhir.
-Pendekatan yang digunakan bersifat deskriptif kualitatif, dengan fokus pada analisis kondisi saat ini, identifikasi \textit{gap}, serta perancangan perbaikan model tata kelola AE yang sesuai dengan konteks organisasi Paragon Corp.
-
-Secara umum, tahapan metodologi tugas akhir ini terdiri atas beberapa langkah berikut:
+Tahapan dalam pengerjaan tugas akhir ini dilakukan dengan menggunakan metodologi \textit{Design Research Science Methodology} (DSRM).
+DSRM adalah pendekatan yang berfokus dalam memecahkan masalah dan dirancang untuk memberikan solusi terhadap suatu masalah yang dihadapi organisasi \autocite{absari2022design}.
+Metodologi DSRM terdiri dari enam tahapan yang dijalankan secara sistematis.
 \begin{enumerate}
-    \item {Tahap investigasi dan pengumpulan fakta} \\
-    Tahap ini bertujuan untuk memahami konteks organisasi dan kondisi penerapan AE di Paragon Corp. Kegiatan yang dilakukan meliputi:
-    \begin{enumerate}[a.]
-        \item Studi internal terkait artefak AE, alur kerja, dan kebijakan perusahaan.
-        \item Observasi terhadap penggunaan \textit{platform} SAP LeanIX dalam proses manajemen arsitektur.
-        \item Wawancara dengan pihak terkait untuk mengidentifikasi praktik tata kelola dan pola kolaborasi yang berjalan saat ini. \\
-    \end{enumerate}
+    \item \textit{Problem Identification} \\
+    Pada tahapan ini, penulis melakukan eksporasi dalam proses tata kelola AE.
+    Tahapan ini dilakukan dengan analisis dokumen terkait tata kelola AE dan melakukan wawancara dengan Tim \textit{Enterprise Architect} Paragon Corp untuk mendapatkan informasi tentang proses tata kelola saat ini.
+    Tahapan ini menghasilkan pernyataan masalah yang jelas dan ruang lingkup pengerjaan tugas akhir yang difokuskan. \\
 
-    \item {Tahap studi literatur dan analisis teoretis} \\
-    Pada tahap ini dilakukan pengumpulan, pengelompokan, dan penelaahan literatur yang relevan mengenai Arsitektur \textit{Enterprise}, Tata Kelola Arsitektur \textit{Enterprise}, dan \textit{EA Maturity Model}. 
-    Literatur yang digunakan mencakup standar internasional seperti TOGAF dan artikel ilmiah. 
-    Hasil analisis literatur akan dijelaskan secara sistematis pada Bab II – Studi Literatur sebagai landasan teoretis. \\
+    \item \textit{Define Objectives of a Solution} \\
+    Pada tahapan ini, penulis menetapkan tujuan yang harus dicapai oleh solusi berdasarkan masalah yang telah dianalisis.
+    Tujuan dirumuskan dengan mempertimbangkan kebutuhan perbaikan tata kelola AE dan kondisi operasional Paragon Corp.
+    Tujuan ini menjadi panduan dalam menentukan arah desain solusi pada tahapan berikutnya. \\
 
-    \item {Tahap analisis kondisi saat ini dan identifikasi \textit{gap}} \\
-    Berdasarkan hasil investigasi dan teori pendukung, dilakukan analisis terhadap efektivitas tata kelola AE saat ini di Paragon Corp. Tahap ini mencakup:
-    \begin{enumerate}[a.]
-        \item Penilaian tingkat kematangan AE menggunakan kerangka \textit{Enterprise Architecture Maturity Model (EAMM)}.
-        \item Melakukan analisis \textit{gap} antara kondisi saat ini dan \textit{best practice} tata kelola AE. \\
-    \end{enumerate}
+    \item \textit{Design and Development} \\
+    Pada tahapan ini, penulis menentukan \textit{requirement} kemudian merancang solusi berdasarkan \textit{requirement} yang sudah ditentukan.
+    Selain itu, penulis merancang solusi untuk menjawab permasalahan tata kelola AE Paragon Corp.
+    Peracangan dilakukan berdasarkan prinsip-prinsip AE dan standar perusahaan. \\
+    
+    \item \textit{Demonstration} \\
+    Pada tahapan ini, penulis akan menunjukkan bagaimana solusi yang dirancang dapat digunakan dalam konteks perusahaan.
+    Tahap ini bertujuan memastikan solusi dapat diterapkan secara praktis. \\
 
-    \item {Tahap perancangan model perbaikan tata kelola AE} \\
-    Pada tahap ini dirancang model perbaikan tata kelola AE yang lebih terstruktur, selaras dengan \textit{maturity level} yang ditargetkan, dan sesuai konteks organisasi. 
-%    Model rancangan akan mencakup komponen peran dan tanggung jawab, proses kerja, serta mekanisme evaluasi dan pembaruan artefak EA. \\
+    \item \textit{Evaluation} \\
+    Pada tahapan ini, solusi yang telah dikembangkan dinilai efektivitas, kelayakan, dan kesesuaiannya dengan tujuan yang ditetapkan.
+    Evaluasi ini akan melibatkan diskusi dan validasi bersama Tim \textit{Enterprise Architect} Paragon Corp maupun dosen pembimbing untuk menilai apakah solusi telah mengatasi permasalahan yang terjadi.
+    Evaluasi ini memberikan masukan untuk melakukan penyempurnaan terhadap solusi. \\
 
-    \item {Tahap evaluasi dan validasi model} \\
-    Model yang dihasilkan kemudian dievaluasi untuk menilai kelayakan dan dampaknya terhadap efektivitas pengelolaan AE. Evaluasi dilakukan melalui:
-    \begin{enumerate}[a.]
-        \item \textit{Expert review} bersama pemnagku kepentingan internal Paragon Corp.
-        \item Analisis perbandingan antara kondisi sebelum dan sesudah penerapan model. \\
-    \end{enumerate}
+    \item \textit{Communication} \\
+    Pada tahapan ini, penulis menyampika hasil solusi yang telah dirancang dan cara solusi tersebut menyelesaikan masalah yang terjadi.
+    Penyampaian ini dilakukan dengan Tim \textit{Enterprise Architect} Paragon Corp dan dosen pembimbing untuk memastikan hasil solusi dapat dipahami dan diterapkan sesuai kebutuhan perusahaan. \\
 \end{enumerate}
