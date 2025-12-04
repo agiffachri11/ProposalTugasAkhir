@@ -189,13 +189,16 @@ Permasalahan tersebut dapat dikategorikan sebagai berikut:
 
 Permasalahan yang akan diselesaikan dalam Tugas Akhir ini yaitu pelaksanaan \textit{EA impact analysis} yang belum sesuai dengan tata kelola yang diharapkan.
 Permasalahan ini dipilih karena Tim \textit{Enterprise Architect} Paragon Corp menilai bahwa prosedur \textit{EA impact analysis} yang ada saat ini masih belum jelas.
+Selain itu, permasalahan ini perlu diselesaikan karena proses ini merupakan proses yang mengendalikan setiap perubahan arsitektur agar tetap selaras dengan perusahaan.
+Ketidakjelasan proses ini akan menyebabkan inkonsistensi analisis, munculnya perubahan yang tidak terkendali, dan potensi gangguan integrasi.
 Oleh karena itu, pada Bab IV akan dibahas rancangan solusi untuk memperbaiki proses \textit{EA impact analysis} dengan standar yang diharapkan organisasi.
 
 \section{Analisis \textit{Gap} terhadap \textit{EA Maturity} Level 3 \textit{Defined}}
 Setelah wawancara dengan Tim \textit{Enterprise Architect} Paragon Corp, penilaian terakhir terkait \textit{EA maturity} Paragon Corp berada di level 2.
 Evaluasi tingkat \textit{EA maturity} dilakukan dengan membandingkan kondisi AE saat ini di Paragon Corp dengan standar EAMM yang diadopsi dari TOGAF (mengacu ke Tabel \ref{tbl:EAMM}). 
 Penilaian dimulai dengan menguraikan karakteristik tiap level pada masing-masing dimensi, khususnya pada target level 3 (\textit{Defined}), lalu mengidentifikasi \textit{gap} yang didapatkan.
-Pada Tabel \ref{tbl:GapEA} menunjukkan hasil analisis \textit{gap}.
+Pada Tabel \ref{tbl:GapEA} menunjukkan identifikasi awal dari hasil analisis \textit{gap}.
+Sementara itu untuk hasil analisis \textit{gap} secara detail akan dijelaskan di pelaksanaan Tugas Akhir 2.
 
 \begin{landscape}
 \input{table/tabelGapEA.tex}
@@ -219,30 +222,6 @@ Tabel \ref{tbl:KF} menunjukkan kebutuhan fungsional yang menjawab masalah \texti
 Kebutuhan non fungsional diperlukan untuk mendukung keberhasilan implementasi proses \textit{EA Impact Analysis}.
 Tabel \ref{tbl:KNF} menunjukkan kebutuhan non-fungsional yang menjawab masalah \textit{EA Impact Analysis}. \\
 \input{table/tabelNonFungsional.tex}
-
-% Berdasarkan hasil identifikasi masalah dan analisis \textit{gap} dalam implementasi tata kelola AE di Paragon Corp, terdapat sejumlah kebutuhan mendesak yang harus diperbaiki agar tata kelola arsitektur dapat berjalan lebih efektif dan konsisten.
-% \begin{enumerate}
-%   \item Konsistensi Proses Konsultasi dan \textit{Review} EA \\
-%   Penegasan kebijakan diperlukan pada setiap proyek, baik itu \textit{high impact} maupun \textit{minimum impact} tetap melewati tahap konsultasi dan \textit{review} oleh tim EA. 
-%   Standardisasi proses ini penting agar tidak ada perubahan yang luput dari pengawasan arsitektur, sehingga risiko ketidaksesuaian atau tumpang tindih bisa dicegah sejak dini. \\
-
-%   \item Peningkatan Kesadaran dan Kebijakan Dokumentasi Sejak Awal \\
-%   Semua tim, terutama yang menangani infrastruktur dan keamanan, harus didorong untuk secara proaktif mendokumentasikan artefak arsitektur sejak tahap awal proyek, bukan setelah implementasi berjalan. 
-%   Peningkatan kesadaran ini penting agar risiko dapat teridentifikasi lebih awal dan kualitas dokumentasi lebih terjamin. \\
-
-%   \item Pembentukan \textit{Architecture Review Board} (ARB) \\
-%   Paragon Corp perlu segera membentuk forum formal seperti ARB yang melibatkan berbagai peran dan unit. Forum ini berfungsi untuk mengkaji, mengesahkan, dan memantau keputusan arsitektur agar lebih transparan, kolektif, serta tidak hanya didominasi oleh tim inti TI saja. \\
-
-%   \item Integrasi Evaluasi Bisnis dalam Setiap Pengembangan IT \\
-%   Penilaian atas kebutuhan bisnis harus menjadi landasan utama dalam setiap perubahan atau investasi TI. Setiap proyek atau pengembangan solusi teknologi sebaiknya diwajibkan melalui validasi dan kajian formal bersama \textit{Business Architect}, 
-%   sehingga seluruh inisiatif benar-benar selaras dengan prioritas dan strategi perusahaan. \\
-
-%   \item Optimalisasi Pemanfaatan SAP LeanIX Lintas Unit \\
-%   SAP LeanIX tidak cukup hanya digunakan oleh tim TI. Perlu dilakukan edukasi dan pelatihan agar unit bisnis dan manajemen juga mampu mengakses, memahami, serta memanfaatkan artefak EA sebagai bahan referensi untuk pengambilan keputusan bersama. \\
-
-%   \item Pembiasaan Budaya Dokumentasi dan Komunikasi Terbuka \\
-%   Membangun budaya dokumentasi yang kuat serta komunikasi artefak arsitektur yang terbuka ke seluruh pemangku kepentingan sangat diperlukan. Semua pihak harus sadar bahwa dokumen arsitektur bukan hanya pelengkap administrasi, namun landasan pengendalian dan perbaikan tata kelola TI di masa depan. 
-% \end{enumerate}
 
 \section{Analisis Pemilihan Solusi}
 \subsection{Alternatif Solusi}
