@@ -6,11 +6,11 @@
 \section{Gambaran Sistem dan Proses Saat Ini (\textit{As-Is})}
 Pada alur tata kelola Arsitektur \textit{Enterprise} (AE) saat ini terdiri dari 5 tahapan, yaitu \textit{Ideation, Risk and Impact, Development, UAT and Go Live,} dan \textit{Hypercare}.
 Proses \textit{EA Impact Analysis} terjadi pada tahap \textit{Ideation} dan merupakan bagian dari dokumen \textit{User Requirement Specification} (URS).
-Pada tahap ini, \textit{Business Architect} wajib mengisi bagian \textit{EA Impact Analysis} untuk memberikan gambaran awal mengenai dampak perubahan terhadap tiga \textit{domain} arsitektur saja, yaitu \textit{Business Architecture, Application Architecture,} dan \textit{Data Architecture}.
-Dengan demikian, proses \textit{EA Impact Analysis} tidak mencakup semua \textit{domain} arsitektur.
+Pada tahap ini, \textit{Business Architect} wajib mengisi bagian \textit{EA Impact Analysis} untuk memberikan gambaran awal mengenai dampak perubahan terhadap tiga domain arsitektur saja, yaitu \textit{Business Architecture, Application Architecture,} dan \textit{Data Architecture}.
+Dengan demikian, proses \textit{EA Impact Analysis} tidak mencakup semua domain arsitektur.
 
 Pada kondisi saat ini, proses \textit{EA Impact Analysis} di URS terdiri dari 2 bagian utama, yaitu \textit{current state} dan \textit{desired state}.
-Sementara itu, \textit{domain} yang tercakup adalah \textit{Business Architecture, Application Architecture,} dan \textit{Data Architecture}.
+Sementara itu, domain yang tercakup adalah \textit{Business Architecture, Application Architecture,} dan \textit{Data Architecture}.
 \begin{enumerate}
     \item \textit{Business Architecture} \\
     Pada bagian \textit{current state}, memuat gambaran proses bisnis yang berjalan saat ini. 
@@ -22,15 +22,15 @@ Sementara itu, \textit{domain} yang tercakup adalah \textit{Business Architectur
     Sementara itu, pada bagian \textit{desired state}, memuat \textit{target application landscape}, perubahan fitur yang diharapkan, dan ekspetasi perubahan pada integrasi aplikasi. \\ 
   
     \item \textit{Data Architecture} \\
-    Pada \textit{domain} ini, proses \textit{EA Impact Analysis} disusun berdasarkan tiga lapisan, yaitu \textit{Conceptual Layer, Logical Layer,} dan \textit{Technical Layer}.
+    Pada domain ini, proses \textit{EA Impact Analysis} disusun berdasarkan tiga lapisan, yaitu \textit{Conceptual Layer, Logical Layer,} dan \textit{Technical Layer}.
     Pada bagian \textit{current state}, berisi penjelasan kebutuhan bisnis berbasis data (\textit{conceptual}), aliran data antar aplikasi (\textit{logical}), dan teknologi yang saat ini digunakan (\textit{technical}).
     Sementara itu, pada bagian \textit{desired state}, berisi penjelasan kebutuhan bisnis yang ingin dicapai melalui data (\textit{conceptual}), aliran data yang diinginkan antar aplikasi (\textit{logical}), dan teknologi yang diharapkan akan digunakan (\textit{technical}).\\ 
 \end{enumerate}
 
-Dari struktur dan proses \textit{EA Impact Analysis} di URS memiliki beberapa keterbatasan. Pada proses \textit{EA Impact Analysis} tidak mencakup seluruh \textit{domain} arsitektur karena \textit{domain Infrastructure} dan \textit{Security} tidak disertakan dalam URS.
-Informasi mengenai dampak perubahan pada kedua \textit{domain} ini hanya ditemukan melalui diagram yang ada di LeanIX, dan harus memerlukan komunikasi dengan pembuat diagram karena informasi perubahan tidak dijelaskan secara eksplisit.
-Pada \textit{domain Application Architecture} juga mengalami keterbatasan karena analisis integrasi aplikasi tidak dijelaskan kedalaman informasi yang harus dimasukkan. 
-Selain itu, pada \textit{domain Data Architecture}, belum ada perbedaan detail antara \textit{conceptual, logical,} dan \textit{technical} sehingga analisis belum sepenuhnya akurat.
+Dari struktur dan proses \textit{EA Impact Analysis} di URS memiliki beberapa keterbatasan. Pada proses \textit{EA Impact Analysis} tidak mencakup seluruh domain arsitektur karena domain \textit{Infrastructure} dan \textit{Security} tidak disertakan dalam URS.
+Informasi mengenai dampak perubahan pada kedua domain ini hanya ditemukan melalui diagram yang ada di LeanIX, dan harus memerlukan komunikasi dengan pembuat diagram karena informasi perubahan tidak dijelaskan secara eksplisit.
+Pada domain \textit{Application Architecture} juga mengalami keterbatasan karena analisis integrasi aplikasi tidak dijelaskan kedalaman informasi yang harus dimasukkan. 
+Selain itu, pada domain \textit{Data Architecture}, belum ada perbedaan detail antara \textit{conceptual, logical,} dan \textit{technical} sehingga analisis belum sepenuhnya akurat.
 Oleh karena itu, untuk keseluruhan proses \textit{EA Impact Analysis} ini akan disesuaikan kembali dengan kerangka kerja TOGAF. 
 
 \section{Model Konseptual Mekanisme \textit{EA Impact Analysis} (\textit{To-Be})}
@@ -39,34 +39,34 @@ Penyusunan mekanisme \textit{EA Impact Analysis} (\textit{To-Be}) pada Paragon C
 Gambar \ref{gambar:adm} menunjukkan siklus \textit{Architecture Development Method} (ADM) pada TOGAF.
 TOGAF ADM menjelaskan bahwa analisis dan pengembangan arsitektur dilakukan dalam empat fase inti yaitu \textit{Business Architecture (\textit{Phase B}), Application Architecture and Data Architecture (\textit{Phase C}),} dan \textit{Technology Architecture (\textit{Phase D})}. 
 Sementara itu, \textit{Security Architecture}, TOGAF tidak menempatkannya pada fase khusus, melainkan sebagai \textit{concern} yang harus dianalisis pada setiap fase.
-Pada kondisi \textit{To-Be}, \textit{domain} arsitektur Paragon akan melakukan analisis sesuai elemen yang dideskripsikan pada fase-fase ADM tersebut.
+Pada kondisi \textit{To-Be}, domain arsitektur Paragon akan melakukan analisis sesuai elemen yang dideskripsikan pada fase-fase ADM tersebut.
 
-Selain itu, TOGAF menyediakan \textit{Content Model} yang mendefinisikan komponen arsitektur pada setiap \textit{domain}.
-Mekanisme \textit{To-Be} menggunakan metamodel ini sebagai acuan untuk menentukan elemen mana yang harus dianalisis oleh setiap \textit{domain} supaya hasil analisis menjadi terstruktur.
+Selain itu, TOGAF menyediakan \textit{Content Model} yang mendefinisikan komponen arsitektur pada setiap domain.
+Mekanisme \textit{To-Be} menggunakan metamodel ini sebagai acuan untuk menentukan elemen mana yang harus dianalisis oleh setiap domain supaya hasil analisis menjadi terstruktur.
 
 TOGAF menekankan bahwa setiap perubahan harus melalui \textit{architecture impact assessment} untuk menilai risiko, dependensi, dan dampak arsitektural.
 Proses ini tercantum pada bagian \textit{Preliminary Phase} dan \textit{phase} B hingga \textit{phase} D.
-Pada \textit{To-Be}, prinsip ini diimplementasikan dengan analisis formal pada \textit{domain} arsitektur dan penilaian berbasis TOGAF.
+Pada \textit{To-Be}, prinsip ini diimplementasikan dengan analisis formal pada domain arsitektur dan penilaian berbasis TOGAF.
 
 \subsection{Model Konseptual \textit{EA Impact Analysis}}
 Model \textit{EA Impact Analysis} (\textit{To-Be}) menggambarkan bagaimana proses analisis dampak arsitektur dilakukan secara formal dengan mengacu pada elemen-elemen TOGAF dan tanpa mengubah alur tata kelola yang berlaku di Paragon.
 Proses \textit{EA Impact Analysis} diisi pada dokumen URS saat disepakatinya suatu inisiatif.
-Setiap \textit{domain} melakukan analisis terhadap elemen arsitektur berdasarkan fase ADM dan \textit{Content Metamodel} TOGAF.
+Setiap domain melakukan analisis terhadap elemen arsitektur berdasarkan fase ADM dan \textit{Content Metamodel} TOGAF.
 \begin{enumerate}
     \item \textit{Business Architecture} (\textit{Phase B})\\
-    \textit{Domain} ini menilai dampak perubahan terhadap \textit{business process, business capability, business service,} dan \textit{role} yang terdampak. \\
+    Domain ini menilai dampak perubahan terhadap \textit{business process, business capability, business service,} dan \textit{role} yang terdampak. \\
   
     \item \textit{Application Architecture} (\textit{Phase C})\\
-    \textit{Domain} ini menilai dampak perubahan terhadap \textit{application component, application service, information flow} dan \textit{integrasi} aplikasi. \\
+    Domain ini menilai dampak perubahan terhadap \textit{application component, application service, information flow} dan \textit{integrasi} aplikasi. \\
 
     \item \textit{Data Architecture} (\textit{Phase C})\\
-    Analisis pada \textit{domain} ini dibagi menjadi tiga struktur yaitu \textit{conceptual, logical,} dan \textit{technical}.
+    Analisis pada domain ini dibagi menjadi tiga struktur yaitu \textit{conceptual, logical,} dan \textit{technical}.
     Pada \textit{conceptual} didefinisikan entitas konseptual yang diperlukan untuk mendukung proses bisnis, seperti \textit{employee, customer,} atau \textit{order} berdasarkan kebutuhan informasi terkait.
     Pada \textit{logical} menggambarkan struktur data dan alur perpindahan data antar aplikasi atau proses.
-    Sementara itu, pada \textit{technical} menjelaskan teknologi penyimpanan dan \textit{platform} data yang digunaka. \\
+    Sementara itu, pada \textit{technical} menjelaskan teknologi penyimpanan dan \textit{platform} data yang digunakan. \\
 
     \item \textit{Technology Architecture} (\textit{Phase D})\\
-    \textit{Domain} ini menilai dampak perubahan terhadap \textit{technology component, platform service} dan aspek non-fungsional (\textit{availability, scalability, performance}). \\
+    Domain ini menilai dampak perubahan terhadap \textit{technology component, platform service} dan aspek non-fungsional (\textit{availability, scalability, performance}). \\
 
     \item \textit{Security Architecture} (\textit{Architecture Concern})\\
     \textit{Security} dianalisis sebagai \textit{concern} lintas domain. 
@@ -76,7 +76,7 @@ Setiap \textit{domain} melakukan analisis terhadap elemen arsitektur berdasarkan
 Setelah melakukan analisis, semua hasil akan digabungkan ke satu dokumen yang memuat rangkuman dampak bisnis, aplikasi, data, teknologi, dan keamanan.
 
 \section{Perbandingan (\textit{As-Is}) dan (\textit{To-Be})}
-Perbandingan antara mekanisme \textit{EA Impact Analysis} pada kondsi (\textit{As-Is}) dan (\textit{To-Be}) dilakukan untuk menampilkan perubahan konseptual yang terjadi pada proses analisis dampak arsitektur.
+Perbandingan antara mekanisme \textit{EA Impact Analysis} pada kondisi (\textit{As-Is}) dan (\textit{To-Be}) dilakukan untuk menampilkan perubahan konseptual yang terjadi pada proses analisis dampak arsitektur.
 Perubahan yang dijelaskan tidak mengubah alur tata kelola, karena perubahan hanya berfokus kepada proses \textit{EA Impact Analysis} agar lebih selaras dengan TOGAF dan kebutuhan Paragon.
 Tabel \ref{tbl:perbandinganKondisi} perbedaan antara proses \textit{EA Impact Analysis} saat ini dan rancangan. \\
 \input{table/tabelAsIsToBe.tex}
